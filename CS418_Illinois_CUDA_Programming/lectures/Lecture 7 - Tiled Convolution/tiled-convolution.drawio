@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2024-07-24T08:06:02.916Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="yFXcI6S2FV6cwX9v4n7e" version="24.7.0" type="device">
+  <diagram name="Page-1" id="YJvzxKiSzr7iSLRIedE6">
+    <mxGraphModel dx="1064" dy="873" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-23" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UdTC_RlebHlB75Zyw_1m-2" target="UdTC_RlebHlB75Zyw_1m-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-19" y="201" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="22" y="201" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="63" y="201" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-11" value="TILE_SIZE = 3&lt;div&gt;MASK_WIDTH = 3&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-60" y="90" width="185.5" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-12" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="272" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-13" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-19" y="272" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-14" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="22" y="272" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-15" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="63" y="272" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-17" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="104" y="272" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UdTC_RlebHlB75Zyw_1m-4" target="UdTC_RlebHlB75Zyw_1m-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="12" y="252" as="sourcePoint" />
+            <mxPoint x="-29" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UdTC_RlebHlB75Zyw_1m-5" target="UdTC_RlebHlB75Zyw_1m-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="53" y="252" as="sourcePoint" />
+            <mxPoint x="12" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-26" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;dashed=1;" edge="1" parent="1" source="UdTC_RlebHlB75Zyw_1m-2" target="UdTC_RlebHlB75Zyw_1m-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="12" y="252" as="sourcePoint" />
+            <mxPoint x="-29" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-27" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;dashed=1;" edge="1" parent="1" source="UdTC_RlebHlB75Zyw_1m-4" target="UdTC_RlebHlB75Zyw_1m-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="12" y="252" as="sourcePoint" />
+            <mxPoint x="94" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-29" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="11" y="156" width="20" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTC_RlebHlB75Zyw_1m-31" value="&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;MASK_WIDTH - 1 &amp;gt; threadIdx.x&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-62" y="150" width="174" height="34" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

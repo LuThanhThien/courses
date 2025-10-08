@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://web.stanford.edu/class/cs231a/syllabus.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS231A: Computer Vision, From 3D Perception to 3D Reconstruction and beyond</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./Syllabus_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./Syllabus_files/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href="./Syllabus_files/css" rel="stylesheet" type="text/css">
+
+  <!-- Google Analytics -->
+  <script async="" src="./Syllabus_files/analytics.js.download"></script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-77538764-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="./Syllabus_files/style.css">
+</head>
+
+<body>
+
+<div id="header">
+  <a href="http://svl.stanford.edu/">
+    <img src="./Syllabus_files/svl.png" style="height:50px; float: left; margin-left: 20px;">
+  </a>
+  <a href="http://iprl.stanford.edu/">
+    <img src="./Syllabus_files/iprl.jpeg" style="height:50px; float: left; margin-left: 20px;">
+  </a>
+  <a href="http://stanford.edu/">
+    <img src="./Syllabus_files/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+  </a>
+
+  <a href="https://web.stanford.edu/class/cs231a/index.html">
+    <h1>CS231A: Computer Vision, From 3D Perception to 3D Reconstruction and beyond</h1>
+  </a>
+
+  <div style="clear:both;"></div>
+</div>
+
+
+<div class="sechighlight">
+<div class="container sec">
+
+	<h2>Syllabus   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://web.stanford.edu/class/cs231a/course_notes.html">[Course Notes]</a></h2>
+
+</div>
+</div>
+
+<div class="container sec">
+ <table id="schedule-table" class="table table-hover">
+        <thead>
+          <tr><th>Lecture</th>
+          <th>Date</th>
+          <th>Title</th>
+          <th class="download-col">Download</th>
+          <th>Reading</th>
+          <th>Instructor</th>
+        </tr></thead>
+
+            <tbody><tr>
+      <td>1</td>
+      <td>03/31/2025</td>
+      <td>Introduction</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture1_introduction_2025.pdf">[slides]</a></td>
+      <td></td>
+      <td>Jeannette</td>
+    </tr>
+
+    <tr class="warning">
+      <td></td>
+      <td>04/01/2025</td>
+      <td>Problem Set 0 Released</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps0.pdf">[pdf]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps0_code.zip">[code]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps0_template.zip">[latex]</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>04/02/2025</td>
+      <td>Camera Models</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture2_camera_models.pdf">[slides]</a></td>
+      <td>[FP] Ch.1<br>
+       [HZ] Ch.6</td>
+      <td>Silvio</td>
+    </tr>
+	
+	<tr class="warning">
+      <td></td>
+      <td>04/02/2025</td>
+      <td>Problem Set 1 Released</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps1.pdf">[pdf]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps1_code.zip">[code]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps1_template.zip">[latex]</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+	
+	<tr class="success">
+      <td>TA 1</td>
+      <td>04/04/2025</td>
+      <td>Python Introduction and Linear Algebra Review</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/section/section1.pdf">[slides]</a></td>
+      <td></td>
+      <td>Adam</td>
+    </tr>
+
+     
+   <tr>
+      <td>3</td>
+      <td>04/07/2025</td>
+      <td>Camera Models II and Camera Calibration (Recorded on Canvas, no in-person class)</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture3_camera_calibration.pdf">[slides]</a></td>
+      <td>[FP] Ch.1<br>[HZ] Ch.7</td>
+      <td>Silvio</td>
+    </tr>
+   
+    <tr class="warning">
+      <td></td>
+      <td>04/08/2025</td>
+      <td>Problem Set 0 Due : 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>04/09/2025</td>
+      <td>Single View Metrology (Recorded on Canvas, no in-person class)</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture4_single_view_metrology_2025.pdf">[slides]</a></td>
+      <td>[HZ] Ch.2,3,8<br>
+          [Hoiem &amp; Savarese]<br>Ch.2</td>
+      <td>Silvio</td>
+    </tr>
+
+    <tr class="success">
+      <td>TA 2</td>
+      <td>04/11/2025</td>
+      <td>Problem Set 1 Review 1 + Project Overview<br></td>
+      <td><a href="https://web.stanford.edu/class/cs231a/section/section2.pdf">[slides]</a></td>
+      <td></td>
+      <td>Ishikaa</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>04/14/2025</td>
+      <td>Epipolar Geometry</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture5_epipolar_geometry.pdf">[slides]</a></td>
+ 	   <td>[HZ] Ch.4,9,11<br>[FP] Ch.7,8</td>
+      <td>Silvio</td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>04/16/2025</td>
+      <td>Stereo Systems</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture6_stereo_systems_Flatten.pdf">[slides]</a></td>
+      <!--<td></td>-->
+      <td>[HZ] Ch.9, 18<br>[FP] Ch.7,8</td>
+      <td>Silvio</td>
+    </tr>
+
+    <tr class="success">
+      <td>TA 3</td>
+      <td>04/18/2025</td>
+      <td>Problem Set 1 Review 2 + Course Project Outline</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/section/section3.pdf">[slides]</a></td>
+      <td></td>
+      <td>Ishikaa</td>
+    </tr>
+ 
+    <tr class="warning">
+      <td></td>
+      <td>04/18/2025</td>
+      <td>Problem Set 2 Released</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps2.pdf">[pdf]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps2_code.zip">[code]</a><a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps2_template_2025.zip">[latex]</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr class="warning">
+      <td></td>
+      <td>04/19/2025</td>
+      <td>Problem Set 1 Due: 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>		
+  
+    <tr>
+      <td>7</td>
+      <td>04/21/2025</td>
+      <td>Structure from Motion</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture7_SFM_silvio_2025.pdf">[slides]</a></td>
+      <td>[HZ] Ch.10,18,19<br>[FP] Ch.13<br>[Szelisky] Ch.7</td>
+      <td>Silvio</td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>04/23/2025</td>
+      <td>Active Stereo &amp; Volumetric Stereo</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture8_volumetric_stereo_2025.pdf">[slides]</a></td>
+      <td>[Szelisky] Ch.11<br>
+          [Savarese et al.]<br>
+            [Seitz et al.]<br>
+           </td>
+      <td>Silvio</td>
+    </tr>
+	
+    <tr class="info">
+      <td></td>
+      <td>04/24/2025</td>
+      <td>Project Proposal Due: 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+	<tr class="success">
+      <td>TA 4</td>
+      <td>04/25/2025</td>
+      <td>Problem Set 2 Review</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/section/section4.pdf">[slides]</a></td>
+      <td></td>
+      <td>Aditya</td>
+    </tr>
+      
+    <tr>
+      <td>9</td>
+      <td>04/28/2025</td>
+      <td>Fitting and Matching</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/lecture9_fitting_matching_2024.pdf">[slides]</a></td>
+      <td>[HZ] Ch.4,11<br>[FP] Ch.10</td>
+      <td>Silvio</td>
+    </tr>
+    
+    <tr>
+        <td>10</td>
+        <td>04/30/2025</td>
+        <td>Representations &amp; Representation Learning</td>
+        <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture10_LowLevelRepresentations.pdf">[slides]</a></td>
+        <td></td>
+        <td>Jeannette</td>
+     </tr>
+
+    <tr class="warning">
+      <td></td>
+      <td>05/02/2025</td>
+      <td>Problem Set 2 Due: 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>	
+	
+	<tr class="success">
+      <td>TA 5</td>
+      <td>05/02/2025</td>
+      <td>Midterm Review</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/section/section5.pdf">[slides]</a></td>
+      <td></td>
+      <td>Aditya+Adam+Ishikaa</td>
+    </tr>
+
+	<tr class="danger">
+      <td></td>
+      <td>05/05/2025</td>
+      <td>In person Midterm Exam</td>
+      <td></td>
+      <td><a href="https://web.stanford.edu/class/cs231a/231aMidterm2023.zip">[practice midterm]</a></td>
+      <td></td>
+    </tr>
+
+    <tr class="warning">
+      <td></td>
+      <td>05/06/2025</td>
+      <td>Problem Set 3 Released</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps3.pdf">[pdf]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps3_code.zip">[code]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps3_template.zip">[latex]</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+   <tr>
+      <td>11</td>
+      <td>05/07/2025</td>
+      <td>Monocular Depth Estimation &amp; Feature Tracking</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture11_UsingRepresentationLearning.pdf">[slides]</a></td>
+      <td><a href="https://nvlabs.github.io/FoundationStereo/">[Foundation Stereo]</a><br><a href="https://depth-anything.github.io/">[Depth Anything]</a><br><a href="https://depth-anything-v2.github.io/">[Depth Anything V2]</a><br><a href="https://github.com/facebookresearch/dino">[DINO]</a><br><a href="https://github.com/facebookresearch/dinov2">[DINO V2]</a></td>
+      <td>Jeannette</td>
+    </tr>
+
+	<tr class="success">
+      <td>TA 6</td>
+      <td>05/09/2025</td>
+      <td>Introduction to Neural Networks + Problem Set 3 Review 1</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/section/section6.pdf">[slides]</a></td>
+      <td></td>
+      <td>Ishikaa</td>
+    </tr> 
+    
+    <tr>
+      <td>12</td>
+      <td>05/12/2025</td>
+      <td>Learning-based Stereo &amp; Monocular Depth Estimation &amp; Feature Tracking Cont.</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture11_UsingRepresentationLearning.pdf">[slides]</a></td>
+      <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-58536-5_33">[ECCV '20]</a><br><a href="https://arxiv.org/abs/1504.06852">[ICCV '15]</a><br><a href="https://openaccess.thecvf.com/content_cvpr_2018/html/Sun_PWC-Net_CNNs_for_CVPR_2018_paper.html">[CVPR '18]</a></td>
+      <td>Jeannette</td>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>05/14/2025</td>
+      <td>Optimal and Scene Flow</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture12_Flow.pdf">[slides]</a></td>
+      <td>[PB] Section 2.1-2.4, Section 3.1-3.3</td>
+      <td>Jeannette</td>
+    </tr>
+
+		<tr class="success">
+      <td>TA 7</td>
+      <td>05/16/2025</td>
+      <td>Probability Review + Problem Set 3 Review 2</td>
+      <td><!-- <a href="section/section7.pdf">[slides]</a> --></td>
+      <td></td>
+      <td>Adam</td>
+    </tr>
+    
+    <tr class="info">
+      <td></td>
+      <td>05/16/2025</td>
+      <td>Project Milestone Due: 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>14</td>
+      <td>05/19/2025</td>
+      <td>Optimal Estimation</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture13_OptimalEstimation.pdf">[slides]</a></td>
+      <td>[PB] Ch 4.2, <a href="https://arxiv.org/abs/2001.05673">Paper 1</a> <a href="https://arxiv.org/abs/1605.07148">Paper 2</a></td>
+      <td>Jeannette</td>
+    </tr>
+
+    <tr class="warning">
+      <td></td>
+      <td>05/20/2025</td>
+      <td>Problem Set 4 Released</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps4.pdf">[pdf]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps4_code.zip">[code]</a> <a href="https://web.stanford.edu/class/cs231a/hw_2025_spring/ps4_template.zip">[latex]</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr class="warning">
+      <td></td>
+      <td>05/20/2025</td>
+      <td>Problem Set 3 Due: 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>	
+ 
+    <tr>  
+      <td>15</td>
+      <td>05/21/2025</td>
+      <td>Optimal Estimation Cont. (Flipped Format)</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture14_OptimalEstimationCont&#39;.pdf">[slides]</a></td>
+      <!-- <td><a href="lectures/lecture15_optimal_estimation_cont.pdf">[slides]</a></td> -->
+      <td><a href="https://people.csail.mit.edu/cchoi/pub/Choi13iros_gputracking.pdf">Paper 1</a> <a href="https://arxiv.org/abs/1605.07148">Paper 2</a></td>
+      <td>Jeannette</td>
+    </tr>
+
+    <tr class="warning">
+      <td></td>
+      <td>05/26/2025</td>
+      <td><i>Memorial Day Holiday (No class)</i></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+   
+    <tr class="success">
+      <td>TA 8</td>
+      <td>05/23/2025</td>
+      <td>Problem 4 Set Review 1 + Final Project Q/A</td>
+      <td><!-- <a href="section/section8.pdf">[slides]</a> --></td>
+      <td></td>
+      <td>Aditya</td>
+    </tr>
+   
+    <tr>
+      <td>16</td>
+      <td>05/28/2025</td>
+      <td>Neural Radiance Fields</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture16_NeuralRadianceFields.pdf">[slides]</a></td>
+      <td><a href="https://www.matthewtancik.com/nerf">NeRF website</a><br><a href="https://mikh3x4.github.io/nerf-navigation/">NeRF Navigation</a></td>
+      <td>Jeannette</td>
+    </tr>
+   
+    <tr class="success">
+      <td>TA 9</td>
+      <td>05/30/2025</td>
+      <td>Final Project Poster Guidelines</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/section/section9.pdf">[slides]</a></td>
+      <td></td>
+      <td>Ishikaa</td>
+    </tr>
+    
+    <tr>
+      <td>17</td>
+      <td>06/02/2025</td>
+      <td>Gaussian Splatting</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/Lecture17_GaussianSplatting.pdf">[slides]</a></td>
+      <td><a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">Paper 1</a></td>
+      <td>Jeannette</td>
+    </tr>
+
+    <tr>
+      <td>18</td>
+      <td>06/04/2025</td>
+      <td>Guest Lecture</td>
+      <td><a href="https://web.stanford.edu/class/cs231a/lectures_2025/2025.06.04%20-%20GuestLecture_stanfordcs231a_.pdf">[slides]</a></td>
+      <td></td>
+      <!-- <td><a href="https://yenchenlin.me/inerf/">Paper 1</a> <a href="https://mikh3x4.github.io/nerf-navigation/">Paper 2</a></td> -->
+      <td><a href="https://francisengelmann.github.io/">Francis Engelmann</a></td>
+    </tr>
+   
+    <tr class="warning">
+      <td></td>
+      <td>06/04/2025</td>
+      <td>Problem Set 4 Due: 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!-- <tr class="success"> 
+      <td>TA 10</td>
+      <td>06/06/2025</td>
+      <td>No Section</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr> -->
+
+    <tr class="info"> 
+      <td></td>
+      <td>06/09/2025</td>
+      <td>Project Poster Session</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    
+    <tr class="info">
+      <td></td>
+      <td>06/11/2025</td>
+      <td>Project Final Report Due: 11:59PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+</tbody></table>
+	  
+</div>
+
+<!-- jQuery and Bootstrap -->
+<script src="./Syllabus_files/jquery.min.js.download"></script>
+<script src="./Syllabus_files/bootstrap.min.js.download"></script>
+
+
+
+</body></html>

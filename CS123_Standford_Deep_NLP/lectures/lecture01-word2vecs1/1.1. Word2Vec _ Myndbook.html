@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://myndbook.com/view/4900 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>1.1. Word2Vec | Myndbook</title>
+	<meta name="description" content="1.1. Word2Vec. Mind Mapping, Note Mapping, and Concept Mapping to promote logical thinking, reading comprehension, idea generation, and knowledge analysis.">
+	<meta name="keywords" content="1.1. Word2Vec, Mind Maps, Note Maps, Concept Maps, Structured, Logical Thinking, Idea Generation, Knowledge Analysis.">
+
+	<script type="text/javascript" async="" src="./1.1. Word2Vec _ Myndbook_files/js"></script><script async="" src="./1.1. Word2Vec _ Myndbook_files/analytics.js.download"></script><script src="./1.1. Word2Vec _ Myndbook_files/jquery.min.js.download"></script>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="./1.1. Word2Vec _ Myndbook_files/bootstrap.min.css">
+	<link href="./1.1. Word2Vec _ Myndbook_files/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./1.1. Word2Vec _ Myndbook_files/font-awesome.min.css">
+
+
+	<!-- <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css"> -->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="./1.1. Word2Vec _ Myndbook_files/bootstrap.min.js.download"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+	<link rel="stylesheet" media="all" href="./1.1. Word2Vec _ Myndbook_files/application-ad128861b2710087e6f1c5f90bd27ec84ceb9df99608475645df8ec9ff17d4c5.css">
+	<script src="./1.1. Word2Vec _ Myndbook_files/application-1c6fef3d4734ac49250171fd153c39c39f4743596f4f2ea716bde2ea2a0a2f6f.js.download"></script>
+	<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="wKP600EBUfrJkZJL9Urh83MaeJGiPlBZmNGHc9R4PbeR1Qmu2dhhVcEzJNtE81BXQS6Spk13z9EcYflWVtP1Bw==">
+	<link rel="shortcut icon" type="image/x-icon" href="https://myndbook.com/assets/favicon-1e8752d8002691636c95f6fdff8ae1ecdf12795fce2f12c381b93a7985d92e2d.ico">
+
+	<script type="text/javascript" charset="utf8" src="./1.1. Word2Vec _ Myndbook_files/jquery.dataTables.js.download"></script>	
+	
+	<!---<script src="https://cdn.rawgit.com/hammerjs/touchemulator/master/touch-emulator.js"></script>
+	<script> TouchEmulator(); </script> -->
+
+
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="topNav">
+		  <div class="container">
+
+		  	<!-- Header -->
+	        <div class="navbar-header">
+	        	<button type="button" id="myndbook-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+		        <a class="navbar-brand" href="https://myndbook.com/" id="myndbookLogoText">MYNDBOOK</a>
+	        </div>
+
+	        <!-- Pages -->
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	              <ul class="nav navbar-nav">
+	                 <li><a href="https://myndbook.com/popular">Popular</a></li>                 
+	                 <li><a href="https://myndbook.com/library">My Library</a></li>   
+	              </ul>
+	              <ul class="nav navbar-nav navbar-right">
+	            		<li><a href="https://myndbook.com/signup" id="navbarSignup">Signup for free!</a></li>
+	                	<li><a href="https://myndbook.com/login">Login</a></li>
+	              </ul>
+	        </div>
+		  
+		  </div>
+		</nav>
+	</div>
+
+
+
+	
+<div id="navigationList">
+	<ol class="breadcrumb">
+
+	  		<li><a href="https://myndbook.com/library/1545">CS224N: NLP with Deep Learning</a></li>
+
+		  	<li id="editMapButton" class="active" data-toggle="popover" data-placement="bottom" data-trigger="manual" data-content="&lt;p&gt;Edit the name and save location of your new map here.&lt;/p&gt;" data-container="body" data-html="true" data-original-title="" title="">
+		  		<span class="mapTitleText">
+		  			1.1. Word2Vec
+				</span>		  			 
+
+                <a href="https://myndbook.com/view/4900#" aria-hidden="true"></a>
+		  	</li>
+		  	<div id="mapStatusBar" style="opacity: 1;"><span>Create your own note maps today! Sign up for a <a href="https://myndbook.com/signup">free</a> account.</span></div>
+	</ol>
+</div>
+
+
+<div id="notesContainerViewport" style="height: 649px;">
+	<div id="notesContainer">
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40026" style="top: 105px; left: 869px; width: 190px; cursor: inherit;" data-notehash="120cab9f5b82be11192082bdb663a70cc25271af">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#d4d4d4 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#d4d4d4; background-color:#e4e4e4; ">
+        		Dataset
+   			</div>
+   			<div class="panel-body">
+    			<div>Take a large corpus of text data, and convert it into (input, output) pairs, using a rolling window of fixed length.&nbsp;</div><div>- Example dataset: "<i>the quick brown fox jumped over the lazy dog</i>". If window size =1, windows are "the quick brown", "quick brown fox", "brown fox jumped", etc.&nbsp;</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40027" style="top: 181px; left: 142px; width: 190px; cursor: inherit;" data-notehash="7dd8b39cc6b3386159457366be73ee01d180b4d7">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#d4d4d4 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#d4d4d4; background-color:#e4e4e4; ">
+        		<b>
+        		Goal&nbsp;</b>
+   			</div>
+   			<div class="panel-body">
+    			<a href="https://myndbook.com/view/4914">Train a distributed vector representation of words (why?).</a>&nbsp;So, we'll construct a toy task to learn these representations in an <i>unsupervised</i> setting.&nbsp;
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note mainIdeaNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40028" style="top: 88px; left: 534px; width: 245px; cursor: inherit;" data-notehash="d786cc54ac10b7ed956b93ba55db89b74a1db4a4">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+		<div class="panel" style="border-color:#6d7b8a">
+	   		<div class="panel-heading mainIdeaNoteHeading" style="background-color:#6d7b8a; color: #fff;">
+	    	 	<h1>Word2Vec</h1>
+	   		</div>
+   		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40030" style="top: 398px; left: 680px; width: 190px; cursor: inherit;" data-notehash="2c1aaa2ae13a4fb69f2cf99eaad8d7d18a10e913">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#bee0f1 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#bee0f1; background-color:#d9edf7; ">
+        		<b>
+        		Continuous Bag-of-Words (CBOW) Model
+   			</b>
+   			</div>
+   			<div class="panel-body">
+    			Using the outer words, predict center word.&nbsp;<div>- Outer word vectors are summed.<br><div>
+<div>- Example: Dataset would be ([the, brown], quick),&nbsp;</div>
+<div>([quick, fox], brown),&nbsp;</div>
+<div>([brown, jumped], fox),</div>
+<div>...</div>
+   			</div>
+   			</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note mainIdeaNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40033" style="top: 267px; left: 567px; width: 190px; cursor: inherit;" data-notehash="6566c2014acab41327722ea2ee35675ea5404b87">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+		<div class="panel" style="border-color:#337ab7">
+	   		<div class="panel-heading mainIdeaNoteHeading" style="background-color:#337ab7; color: #fff;">
+	    	 	<h3>Models</h3>
+	   		</div>
+   		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40034" style="top: 410px; left: 438px; width: 190px; cursor: inherit;" data-notehash="ac20697e426b17066c3c6c248ca52f1debecdd01">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#bee0f1 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#bee0f1; background-color:#d9edf7; ">
+        		<b>
+        		Skip-Gram Model</b>
+   			</div>
+   			<div class="panel-body">
+    			Using center word, predict outer words.
+   			<div>- Example: Dataset would be&nbsp;</div><div>
+<div>(quick, the),&nbsp;</div>
+<div>(quick, brown),&nbsp;</div>
+<div>(brown, quick),&nbsp;</div>
+<div>(brown, fox),&nbsp;</div>
+<div>...</div>
+</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40041" style="top: 918px; left: 276px; width: 190px; cursor: inherit;" data-notehash="031e51c7b763210604b32d4cdb65dcf0792de0af">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#cce7c0 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#cce7c0; background-color:#dff0d8; ">
+        		<b> U</b> Matrix (Outer words)
+   			</div>
+   			<div class="panel-body">
+    			<div>Outer word lookup matrix.</div> <img src="./1.1. Word2Vec _ Myndbook_files/Screen_Shot_2017-01-17_at_9.01.55_PM.png"> <div>u<sub>0</sub>&nbsp;may correspond to "aardvark", u<sub>1</sub>&nbsp;to "a", u<span>n</span>&nbsp;to "zebra", etc.</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40043" style="top: 677px; left: 362px; width: 190px; cursor: inherit;" data-notehash="820dce7a314d0e4c5fdafb06a28510aae49e5165">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#cce7c0 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#cce7c0; background-color:#dff0d8; ">
+        		<b>
+        		V</b> Matrix (Center words)
+   			</div>
+   			<div class="panel-body">
+    			Center word lookup matrix.<img src="./1.1. Word2Vec _ Myndbook_files/Screen_Shot_2017-01-17_at_9.05.26_PM.png">
+<div>&nbsp;v<span>0</span>&nbsp;may correspond to "aardvark", v<span>1</span>&nbsp;to "a", v<span>n</span>&nbsp;to "zebra", etc.</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40044" style="top: 405px; left: 139px; width: 190px; cursor: inherit;" data-notehash="3ecfc25b0eaa4bba0e12ae8f45187803f1c4d46f">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#cce7c0 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#cce7c0; background-color:#dff0d8; ">
+        		<b>Training U &amp; V Matrices</b>
+   			</div>
+   			<div class="panel-body">
+    			To train U and V matrices for all of the words in our vocabulary.&nbsp;<div>- To compute our final word vector for each word <i>w<sub>i</sub></i>, we simply sum <i>w<sub>i</sub> = u<sub>i</sub> + v<sub>i</sub></i>. &nbsp; <div>- Alternatively, we could concatenate&nbsp;<i>u<span>i</span>&nbsp;</i>&nbsp;and<i>&nbsp;v<span>i</span></i>.</div>
+   			</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40047" style="top: 753px; left: 1168px; width: 355px; cursor: inherit;" data-notehash="b108c1f430257343be0cf58dfe33eb25a4b7a5e2">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#2b994c ">
+	   		<div class="panel-heading noteHeading" style="border-color:#2b994c; background-color:#2fa552; color: #fff;">
+        		<b>Objective Function&nbsp;- Softmax Cross-Entropy Loss</b>
+   			</div>
+   			<div class="panel-body">
+    			<div>For each word t = 1 ... T, predict surrounding words within the window size m. We'll minimize:</div><div> <img src="./1.1. Word2Vec _ Myndbook_files/Screen_Shot_2017-01-17_at_9.53.27_PM.png"><br>
+</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40048" style="top: 152px; left: 1115px; width: 330px; cursor: inherit;" data-notehash="84d245f8e9f96f063d7db6c82cd494ce20033618">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#d4d4d4 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#d4d4d4; background-color:#e4e4e4; ">
+        		One-Hot Vectors
+   			</div>
+   			<div class="panel-body">
+    			Vectors that contain a single 1 along a dimension, and zeros everywhere else. Example:<div>
+<img src="./1.1. Word2Vec _ Myndbook_files/Screen_Shot_2017-01-17_at_9.54.34_PM.png">
+   			</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40049" style="top: 726px; left: 835px; width: 245px; cursor: inherit;" data-notehash="e208947f49a65d377268aa3c142d38530b8a8f41">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#cce7c0 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#cce7c0; background-color:#dff0d8; ">
+        		p(o | c)&nbsp;
+   			</div>
+   			<div class="panel-body">
+    			<img src="./1.1. Word2Vec _ Myndbook_files/Screen_Shot_2017-01-17_at_9.57.28_PM.png"><div>
+   			</div><div>Uses the&nbsp;<i>softmax</i> function, which converts scores all classes into a probability distribution.&nbsp;</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40051" style="top: 595px; left: 967px; width: 335px; cursor: inherit;" data-notehash="23b01588c11307ed7bac4a32fa6bfbbeb170239c">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#cce7c0 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#cce7c0; background-color:#dff0d8; ">
+        		Why Dot Product?
+   			</div>
+   			<div class="panel-body">
+    			- Dot products are bigger when component vectors are more similar to each other.&nbsp;<div>- Thus, this model pushes the vectors u<sub>o</sub> and v<sub>c</sub> to be similar to each other.</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40053" style="top: 956px; left: 682px; width: 465px; cursor: inherit;" data-notehash="2bb627a498a6e67cadca31f2e75dc7018f7bd0fd">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#2b994c ">
+	   		<div class="panel-heading noteHeading" style="border-color:#2b994c; background-color:#2fa552; color: #fff;">
+        		<b>
+        		Objective Function - Negative Sampling Loss</b>
+   			</div>
+   			<div class="panel-body">
+    			<div>
+<img src="./1.1. Word2Vec _ Myndbook_files/Screen_Shot_2017-01-17_at_10.34.06_PM.png"><br>
+</div><div>- Problem with Softmax Cross-Entropy: calculating p(o | c) is expensive. Specifically, calculating the denominator of the softmax requires a pass over the entire vocabulary!</div>
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note standardNote" id="40059" style="top: 1131px; left: 1873px; width: 20px; cursor: inherit;" data-notehash="ec83e75bc8709eb640c1066e6c6a41e6f8746fa5">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+
+		<div class="panel" style="border-color:#bee0f1 ">
+	   		<div class="panel-heading noteHeading" style="border-color:#bee0f1; background-color:#d9edf7; ">
+        		&nbsp;
+   			</div>
+   			<div class="panel-body">
+    			&nbsp;
+   			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+				<div class="note mainIdeaNote _jsPlumb_endpoint_anchor _jsPlumb_connected" id="40066" style="top: 1065px; left: 1332px; width: 229px; cursor: inherit;" data-notehash="34cee3cda02ae62d57ea42aed60d9cd57b86becd">
+		<div class="ep" style="display: none;"><div class="epBox"></div></div>
+		<div class="panel" style="border-color:#2fa552">
+	   		<div class="panel-heading mainIdeaNoteHeading" style="background-color:#2fa552; color: #fff;">
+	    	 	<h3>Cost Functions</h3>
+	   		</div>
+   		</div>
+	</div>
+
+		
+
+
+
+
+	<div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 533.9px; top: 132.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 331.9px; top: 248.4px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:329.75px;top:130.75px" width="206.5" height="120" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector"><path d="M 0 115.5 C 91 47.75 91 47.75 202 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 115.5 C 91 47.75 91 47.75 202 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,115.5 L10.204976635566297,114.13674952134762 L5.05358287885905,111.73817862113275 L4.233831589745268,106.11518939617453 L0,115.5" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 778.9px; top: 132.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 868.9px; top: 205.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:776.75px;top:130.75px" width="94.5" height="77.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector"><path d="M 90 73 C 55 26.5 55 26.5 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 90 73 C 55 26.5 55 26.5 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M90,73 L88.5772511564276,62.80314824428082 L86.208767077965,67.96844428323824 L80.59065478061527,68.820978279257 L90,73" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 661.9px; top: 342.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 774.9px; top: 397.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:659.75px;top:340.75px" width="117.5" height="59.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector"><path d="M 113 55 C 66.5 17.5 66.5 17.5 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 113 55 C 66.5 17.5 66.5 17.5 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M113,55 L109.12826262511471,45.46010221753313 L108.09401613864432,51.04761814191523 L102.85464062815477,53.24737818793897 L113,55" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 661.9px; top: 342.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 532.9px; top: 409.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:530.75px;top:340.75px" width="133.5" height="71.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 67 C 54.5 23.5 54.5 23.5 129 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 67 C 54.5 23.5 54.5 23.5 129 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,67 L10.153696995867884,65.2963458930571 L4.924995427330258,63.07133355440093 L3.9177185107899937,57.47889283380271 L0,67" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 868.9px; top: 205.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 756.9px; top: 304.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:754.75px;top:203.75px" width="116.5" height="103.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector"><path d="M 0 99 C 46 39.5 46 39.5 112 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 99 C 46 39.5 46 39.5 112 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,99 L9.46149333337022,94.9404256500723 L3.8546233960317835,94.01684051281073 L1.5517163695777314,88.82197581510123 L0,99" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 236.9px; top: 315.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 233.9px; top: 404.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:223.25px;top:313.75px" width="16" height="93.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 89 C -8.5 34.5 -8.5 34.5 3 0 " transform="translate(10.75,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 89 C -8.5 34.5 -8.5 34.5 3 0 " transform="translate(10.75,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,89 L3.5570951524480208,79.33837104436158 L-0.9684341222529012,82.77487868786027 L-6.32404978745631,80.87556806381063 L0,89" class="" stroke="#80868D" fill="#80868D" transform="translate(10.75,2.25)"></path></svg><div class="_jsPlumb_overlay " id="jsPlumb_1_79" style="position: absolute; transform: translate(-50%, -50%); font: 12px sans-serif; color: black; left: 227.5px; top: 352.5px;">specifically entails</div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1167.9px; top: 821.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1079.9px; top: 795.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:1077.75px;top:791.5115282732073px" width="92.5" height="32.73847172679263" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 0 C 54 3 54 3 88 26 " transform="translate(2.25,4.48847172679263)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 0 C 54 3 54 3 88 26 " transform="translate(2.25,4.48847172679263)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,0 L9.265722937676435,-4.48847172679263 L6.290125943020959,0.35258420403458046 L8.706065470954877,5.495855166891431 L0,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,4.48847172679263)"></path></svg><div class="_jsPlumb_overlay " id="jsPlumb_1_93" style="position: absolute; transform: translate(-50%, -50%); font: 12px sans-serif; color: black; left: 1131px; top: 801px;">where</div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 834.9px; top: 795.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 465.9px; top: 986.4px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:463.75px;top:793.75px" width="373.5" height="195" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 190.5 C 174.5 85.25 174.5 85.25 369 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 190.5 C 174.5 85.25 174.5 85.25 369 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,190.5 L10.28909750774837,190.133295110414 L5.394722874220503,187.24623831383397 L5.124396418595923,181.5702429291116 L0,190.5" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 834.9px; top: 795.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 551.9px; top: 752.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:549.75px;top:748.6958336464644px" width="287.5" height="49.55416635353555" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector"><path d="M 0 0 C 151.5 11.5 151.5 11.5 283 43 " transform="translate(2.25,4.304166353535551)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 0 C 151.5 11.5 151.5 11.5 283 43 " transform="translate(2.25,4.304166353535551)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,0 L9.35276173122637,-4.304166353535551 L6.281913493367028,0.4770354932845739 L8.595562535536569,5.667124905777191 L0,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,4.304166353535551)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1058.9px; top: 205.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1114.9px; top: 203.4px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:1056.75px;top:198.90636096196673px" width="60.5" height="9.990049946790789" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector"><path d="M 56 0 C 28 1.25 28 1.25 0 2.5 " transform="translate(2.25,4.593639038033264)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 56 0 C 28 1.25 28 1.25 0 2.5 " transform="translate(2.25,4.593639038033264)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M56,0 L47.23194723420059,5.396410908757525 L49.7062685335218,0.2809701547534911 L46.785962861575996,-4.593639038033264 L56,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,4.593639038033264)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 957.4px; top: 725.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1134.4px; top: 694.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:955.25px;top:690.5103701037747px" width="181.5" height="37.739629896225374" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 177 0 C 78.5 5.5 78.5 5.5 0 31 " transform="translate(2.25,4.489629896225373)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 177 0 C 78.5 5.5 78.5 5.5 0 31 " transform="translate(2.25,4.489629896225373)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M177,0 L168.2932476216109,5.494766875984445 L170.7098300335078,0.3517979429156751 L167.73483818841143,-4.489629896225373 L177,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,4.489629896225373)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 914.4px; top: 955.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 551.9px; top: 752.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:549.75px;top:750.75px" width="367" height="207.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 0 C 191.25 91.5 191.25 91.5 362.5 203 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 0 C 191.25 91.5 191.25 91.5 362.5 203 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,0 L10.27657845713391,-0.6260472940371384 L5.683042342279835,2.719012639885023 L5.960685377951334,8.394654836565774 L0,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 681.9px; top: 1025.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 465.9px; top: 986.4px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:463.75px;top:982.2586281631947px" width="220.5" height="45.9913718368053" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 0 C 118 9.75 118 9.75 216 39.5 " transform="translate(2.25,4.241371836805303)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 0 C 118 9.75 118 9.75 216 39.5 " transform="translate(2.25,4.241371836805303)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,0 L9.38140527543474,-4.241371836805303 L6.27857445260865,0.5191366323522044 L8.557378874875688,5.724619357811601 L0,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,4.241371836805303)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 437.9px; top: 494.4px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 328.9px; top: 480.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:326.75px;top:475.5px" width="113.5" height="21.25" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 0 C 64.5 -3.25 64.5 -3.25 109 13.5 " transform="translate(2.25,5.5)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 0 C 64.5 -3.25 64.5 -3.25 109 13.5 " transform="translate(2.25,5.5)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,0 L9.239046922179691,4.543127993988499 L6.292098983945531,-0.3154209508444564 L8.73837874623611,-5.4443307106869465 L0,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,5.5)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 233.9px; top: 556.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 456.9px; top: 676.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:231.75px;top:554.75px" width="227.5" height="124.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 223 120 C 121.5 50 121.5 50 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 223 120 C 121.5 50 121.5 50 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M223,120 L218.42930513257687,110.7745597162568 L217.81358709508677,116.42353230410934 L212.75237228195675,119.00696115262703 L223,120" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 233.9px; top: 556.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 370.9px; top: 917.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:231.75px;top:554.75px" width="141.5" height="365.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 137 361 C 78.5 170.5 78.5 170.5 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 137 361 C 78.5 170.5 78.5 170.5 0 0 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M137,361 L139.13752441482546,350.92870468231496 L135.15048897937288,354.9775994001911 L129.57815838338274,353.86443646108813 L137,361" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1446.4px; top: 1064.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1345.4px; top: 890.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:1343.25px;top:888.75px" width="105.5" height="178.5" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 0 C 60.5 77 60.5 77 101 174 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 0 C 60.5 77 60.5 77 101 174 " transform="translate(2.25,2.25)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,0 L9.491502098291297,3.988908111016334 L3.891675127133038,4.954277415007566 L1.6275696935173833,10.166170217576711 L0,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.25)"></path></svg><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1331.9px; top: 1102.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><div class="_jsPlumb_endpoint _jsPlumb_endpoint_anchor jsplumb-droppable jsplumb-draggable" style="position: absolute; height: 0.2px; width: 0.2px; left: 1146.9px; top: 1025.9px;"><svg style="position:absolute;left:0px;top:0px" width="0.2" height="0.2" pointer-events="all" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml"><circle cx="0.1" cy="0.1" r="0.1" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="#456" stroke="none" style=""></circle></svg></div><svg style="position:absolute;left:1144.75px;top:1023.5944397695874px" width="189.5" height="81.65556023041259" pointer-events="none" position="absolute" version="1.1" xmlns="http://www.w3.org/1999/xhtml" class="_jsPlumb_connector "><path d="M 0 0 C 102.5 28.5 102.5 28.5 185 77 " transform="translate(2.25,2.405560230412589)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="transparent" style="" stroke-width="9.5"></path><path d="M 0 0 C 102.5 28.5 102.5 28.5 185 77 " transform="translate(2.25,2.405560230412589)" pointer-events="visibleStroke" version="1.1" xmlns="http://www.w3.org/1999/xhtml" fill="none" stroke="#80868D" style="" stroke-width="1.5"></path><path pointer-events="all" version="1.1" xmlns="http://www.w3.org/1999/xhtml" d="M0,0 L10.010658318904772,-2.405560230412589 L6.0696176786782745,1.6881176601991184 L7.331106477318871,7.228753545267213 L0,0" class="" stroke="#80868D" fill="#80868D" transform="translate(2.25,2.405560230412589)"></path></svg></div>
+</div>
+
+
+<script type="text/javascript">
+	jsPlumb.bind("ready", function() {
+			drawConnection("40028", "40027", "");
+			drawConnection("40028", "40026", "");
+			drawConnection("40033", "40030", "");
+			drawConnection("40033", "40034", "");
+			drawConnection("40026", "40033", "");
+			drawConnection("40027", "40044", "specifically entails");
+			drawConnection("40047", "40049", "where");
+			drawConnection("40049", "40041", "");
+			drawConnection("40049", "40043", "");
+			drawConnection("40026", "40048", "");
+			drawConnection("40049", "40051", "");
+			drawConnection("40053", "40043", "");
+			drawConnection("40053", "40041", "");
+			drawConnection("40034", "40044", "");
+			drawConnection("40044", "40043", "");
+			drawConnection("40044", "40041", "");
+			drawConnection("40066", "40047", "");
+			drawConnection("40066", "40053", "");
+	});
+
+	function resetNoteContainerSize() {
+		var notesContainerViewportHeight = $(window).height() - $("#notesContainerViewport").offset().top;
+		$("#notesContainerViewport").height(notesContainerViewportHeight);			
+	}
+
+	$(window).resize(resetNoteContainerSize);
+	resetNoteContainerSize();
+
+	function showTips() {
+		$("[data-toggle='popover']:visible").popover("toggle");
+	}
+</script>
+
+<div id="zoomIconsDiv" data-container="body" data-toggle="popover" data-placement="top" data-content="Zoom in/out (BETA). Edit without zoom for the best experience." data-trigger="manual" data-original-title="" title="">
+	<button type="button" class="btn btn-primary" onclick="zoomIn()">
+		<i class="fa fa-search-plus" aria-hidden="true"></i>
+	</button>
+	<button type="button" class="btn btn-primary" onclick="zoomOut();">
+		<i class="fa fa-search-minus" aria-hidden="true"></i>
+	</button>			
+	<button type="button" class="btn btn-primary" onclick="zoomReset();" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+		<i class="fa fa-search" aria-hidden="true"></i>
+	</button>				
+	<div id="feedbackAndTipsDiv"> 
+		<a href="https://myndbook.com/view/library#feedback">Feedback</a> <!--- | <a href="#" onclick="showTips();">Tips</a>----> | <a href="https://vimeo.com/200259239" target="_blank">How-To</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function drawConnection(sourceId, targetId, label) {
+    isStillLoadingConnections = true;
+    jsPlumb.connect({source:sourceId, target:targetId,label:label});
+    isStillLoadingConnections = false; 
+}
+
+function saveConnectionToDatabase(fromNoteId, toNoteId) {
+    var dataToSend = { _method:'POST' };
+    dataToSend.map_id = 4900;
+    dataToSend.to_note_id = toNoteId;
+    dataToSend.from_note_id = fromNoteId;
+
+    $.ajax({
+            type: "POST",
+            url: "/connector/create.json",
+            data: dataToSend,
+            success:function(data) {
+                return false;
+            },
+            error:function(data) {
+                alert("Something went wrong in updating the database.  Please refresh the page.");
+                return false;
+            }
+    });
+}
+
+function setJSPlumb() {
+
+    jsPlumb.importDefaults({
+    	Endpoint: ["Dot", {radius: 0.1}],
+    	HoverPaintStyle: {strokeStyle: "#1e8151", lineWidth: 2 },
+    	ConnectionOverlays: [
+    	    [ "Arrow", {
+    	        location: 1,
+    	        id: "arrow",
+    	        length: 9,
+                width:10,
+    	        foldback: 0.7
+    	    } ]
+    	    
+    	]
+    });
+    //jsPlumb.DefaultDragOptions = { cursor: 'pointer', zIndex:2000 };//sets zindex of cursor very high
+    jsPlumb.Defaults.Anchor = "AutoDefault";
+    jsPlumb.Defaults.Connector = [ "StateMachine", { margin:0, curviness:10, proximityLimit:80 }];
+    jsPlumb.Defaults.PaintStyle = { strokeStyle: "#80868D", lineWidth: 1.5, outlineColor: "transparent", outlineWidth: 4 };
+
+    jsPlumb.bind("connection", function(info) {
+        if(typeof isStillLoadingConnections !== 'undefined' && isStillLoadingConnections)
+            return;
+        
+        enforceParentColorRelationship(info.sourceId, info.targetId);
+        saveConnectionToDatabase(info.sourceId, info.targetId);
+    });
+
+    var currentMousePos = { x: -1, y: -1 };
+    $(document).mousemove(function(event) {
+        currentMousePos.x = event.pageX;
+        currentMousePos.y = event.pageY;
+    });
+
+    jsPlumb.bind("connectionDragStop", function(connection) {
+        if($("#"+connection.targetId).hasClass("note")) {
+            return;
+        }
+
+        xLocDraggedTo = currentMousePos.x+$("#notesContainerViewport").scrollLeft()-190/2;
+        yLocDraggedTo = currentMousePos.y+$("#notesContainerViewport").scrollTop()-80-50/2;
+
+        function drawDragOutConnection(toNoteId, fromNoteId) {
+            drawConnection(fromNoteId, toNoteId, "");
+            enforceParentColorRelationship(fromNoteId, toNoteId);
+            saveConnectionToDatabase(fromNoteId, toNoteId);
+        }
+
+        addNote("note", yLocDraggedTo, xLocDraggedTo, drawDragOutConnection, connection.sourceId);
+
+        // Create a new note at this location.
+        console.log("Event fired.");
+    });
+
+    // On connection click
+    jsPlumb.bind("click", function(info) {
+        var sourceId = info.sourceId;
+        var targetId = info.targetId;
+        var conn = jsPlumb.select({target:targetId, source:sourceId}); 
+        var label = conn.getLabel()[0][0];
+
+        $('#updateConnectionModal').modal();
+        $('#updateConnectionModal').find('input[name="labelName"]').val(label);
+        $('#updateConnectionModal').find('input[name="sourceId"]').val(sourceId);        
+        $('#updateConnectionModal').find('input[name="targetId"]').val(targetId);                
+
+    });
+}
+
+function getZoomSource() {
+    var scaleFactor = 1/getCurrentZoom();
+    var xLoc = $("#notesContainerViewport").scrollLeft() + $("#notesContainerViewport").width()/2;
+    var yLoc = $("#notesContainerViewport").scrollTop() + $("#notesContainerViewport").height()/2;
+    xLoc *= scaleFactor;
+    yLoc *= scaleFactor;
+
+    var totalWidth = $("#notesContainer").width();
+    var totalHeight = $("#notesContainer").height();
+
+    //return [xLoc/totalWidth, yLoc/totalHeight];
+    return [0, 0];
+}
+
+function zoomOut() {
+    window.setZoom(getCurrentZoom()-0.1, jsPlumb, getZoomSource(), $("#notesContainer")[0]);
+    shiftInvisiNote();
+}
+
+function zoomIn() {
+    window.setZoom(getCurrentZoom()+0.1, jsPlumb, getZoomSource(), $("#notesContainer")[0]);  
+}
+
+function zoomReset() {
+    window.setZoom(1.0, jsPlumb, getZoomSource(), $("#notesContainer")[0]);   
+    shiftInvisiNote();
+}
+
+function getCurrentZoom() {
+    var zoomVal = parseFloat($("#notesContainer").css("transform").split(",")[3]);
+    return (zoomVal) ? zoomVal : 1.0;
+}
+
+var isZooming = false; 
+window.setZoom = function(zoom, instance, transformOrigin, el) {
+    if(zoom <=0.4) 
+        zoom = 0.4;
+    else if(zoom >=1.5)
+        zoom = 1.5;
+
+    if(isZooming) return;
+    isZooming = true;
+    transformOrigin = transformOrigin || [ 0.5, 0.5 ];
+    instance = instance || jsPlumb;
+    el = el || instance.getContainer();
+    var p = [ "webkit", "moz", "ms", "o" ],
+      s = "scale(" + zoom + ")",
+      oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
+
+    for (var i = 0; i < p.length; i++) {
+        el.style[p[i] + "TransformOrigin"] = oString;
+    }
+    el.style["transformOrigin"] = oString;
+
+    var start = 1.0;
+    var diff = zoom - start;
+
+    $(el).animate({  zoomScale: diff }, {
+        step: function(now,fx) {
+          now+= start;
+          $(this).css('-webkit-transform','scale('+now+')'); 
+          $(this).css('-moz-transform','scale('+now+')');
+          $(this).css('-ms-transform','scale('+now+')');
+          $(this).css('-o-transform','scale('+now+')');
+          $(this).css('transform','scale('+now+')');
+        },
+        done: function() {
+            isZooming=false;          
+        },
+        duration:'fast',
+        easing: "easeOutCubic",
+    });
+
+  instance.setZoom(zoom);    
+  
+};
+
+setJSPlumb();
+
+</script>
+
+
+
+
+
+
+	<script type="text/javascript">
+		$(".note").css("cursor", "inherit");
+		$(".note .ep").css("display", "none");
+
+		if(!isMobile()) {
+			$("#mapStatusBar").css("opacity", 0);
+			$("#mapStatusBar").html("<span>Create your own note maps today! Sign up for a <a href='/signup'>free</a> account.</span>");
+			setTimeout(function() {
+				$("#mapStatusBar").animate({opacity: 1}, 2000);
+			}, 2000);
+
+		}
+	</script>
+	
+
+
+	<script type="text/javascript">
+		// Facebook adds some weird symbols afterwards sometimes...  remove it to clean up URL
+	    if (window.location && window.location.hash) {
+	        if (window.location.hash === '#_=_') {
+	            window.location.hash = '';
+	        }
+	    }
+
+		// So that all AJAX requests will include the CSRF token 
+		$.ajaxSetup({
+		  headers: {
+		    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+		  }
+		});
+
+		// To enable all popovers
+		$(function () {
+	      $('[data-toggle="popover"]').popover()
+	    })
+	</script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-61066173-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=10538170; 
+	var sc_invisible=1; 
+	var sc_security="b1f449ec"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script><script type="text/javascript" src="./1.1. Word2Vec _ Myndbook_files/counter.js.download"></script>
+	<noscript><div class="statcounter"><a title="free hit
+	counters" href="http://statcounter.com/free-hit-counter/"
+	target="_blank"><img class="statcounter"
+	src="http://c.statcounter.com/10538170/0/b1f449ec/1/"
+	alt="free hit counters"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+
+
+</body></html>

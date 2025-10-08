@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0062)https://www.gnu.org/software/bison/manual/html_node/index.html -->
+<html><!-- Created by GNU Texinfo 6.8, https://www.gnu.org/software/texinfo/ --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- 
+This manual (10 September 2021) is for GNU Bison (version 3.8.1),
+the GNU parser generator.
+
+Copyright (C) 1988-1993, 1995, 1998-2015, 2018-2021 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document under
+the terms of the GNU Free Documentation License, Version 1.3 or any later
+version published by the Free Software Foundation; with no Invariant
+Sections, with the Front-Cover texts being "A GNU Manual," and with the
+Back-Cover Texts as in (a) below.  A copy of the license is included in the
+section entitled "GNU Free Documentation License."
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to copy and modify
+this GNU manual.  Buying copies from the FSF supports it in developing GNU
+and promoting software freedom." -->
+<title>Top (Bison 3.8.1)</title>
+
+<meta name="description" content="Top (Bison 3.8.1)">
+<meta name="keywords" content="Top (Bison 3.8.1)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="https://www.gnu.org/software/bison/manual/html_node/index.html#Top" rel="start" title="Top">
+<link href="https://www.gnu.org/software/bison/manual/html_node/Index-of-Terms.html" rel="index" title="Index of Terms">
+<link href="https://www.gnu.org/software/bison/manual/html_node/index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="https://www.gnu.org/manual" rel="up" title="(dir)">
+<link href="https://www.gnu.org/software/bison/manual/html_node/Introduction.html" rel="next" title="Introduction">
+<style type="text/css">
+<!--
+a.copiable-anchor {visibility: hidden; text-decoration: none; line-height: 0em}
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+span:hover a.copiable-anchor {visibility: visible}
+ul.no-bullet {list-style: none}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="./Top (Bison 3.8.1)_files/manual.css">
+
+
+</head>
+
+<body lang="en">
+<h1 class="settitle" align="center">Bison 3.8.1</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top" id="Top">
+<div class="header">
+<p>
+Next: <a href="https://www.gnu.org/software/bison/manual/html_node/Introduction.html" accesskey="n" rel="next">Introduction</a>, Up: <a href="https://www.gnu.org/manual" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="https://www.gnu.org/software/bison/manual/html_node/index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="https://www.gnu.org/software/bison/manual/html_node/Index-of-Terms.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="Bison-1"></span><h1 class="top">Bison</h1>
+
+<p>This manual (10 September 2021) is for GNU Bison (version 3.8.1),
+the GNU parser generator.
+</p>
+<p>Copyright © 1988–1993, 1995, 1998–2015, 2018–2021 Free
+Software Foundation, Inc.
+</p>
+<blockquote>
+<p>Permission is granted to copy, distribute and/or modify this document under
+the terms of the GNU Free Documentation License, Version 1.3 or any later
+version published by the Free Software Foundation; with no Invariant
+Sections, with the Front-Cover texts being “A GNU Manual,” and with the
+Back-Cover Texts as in (a) below.  A copy of the license is included in the
+section entitled “GNU Free Documentation License.”
+</p>
+<p>(a) The FSF’s Back-Cover Text is: “You have the freedom to copy and modify
+this GNU manual.  Buying copies from the FSF supports it in developing GNU
+and promoting software freedom.”
+</p></blockquote>
+
+
+<div class="Contents_element" id="SEC_Contents">
+<h2 class="contents-heading">Table of Contents</h2>
+
+<div class="contents">
+
+<ul class="no-bullet">
+  <li><a id="toc-Introduction-1" href="https://www.gnu.org/software/bison/manual/html_node/Introduction.html">Introduction</a></li>
+  <li><a id="toc-Conditions-for-Using-Bison" href="https://www.gnu.org/software/bison/manual/html_node/Conditions.html">Conditions for Using Bison</a></li>
+  <li><a id="toc-GNU-GENERAL-PUBLIC-LICENSE" href="https://www.gnu.org/software/bison/manual/html_node/Copying.html">GNU GENERAL PUBLIC LICENSE</a></li>
+  <li><a id="toc-The-Concepts-of-Bison" href="https://www.gnu.org/software/bison/manual/html_node/Concepts.html">1 The Concepts of Bison</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Languages-and-Context_002dFree-Grammars" href="https://www.gnu.org/software/bison/manual/html_node/Language-and-Grammar.html">1.1 Languages and Context-Free Grammars</a></li>
+    <li><a id="toc-From-Formal-Rules-to-Bison-Input" href="https://www.gnu.org/software/bison/manual/html_node/Grammar-in-Bison.html">1.2 From Formal Rules to Bison Input</a></li>
+    <li><a id="toc-Semantic-Values-1" href="https://www.gnu.org/software/bison/manual/html_node/Semantic-Values.html">1.3 Semantic Values</a></li>
+    <li><a id="toc-Semantic-Actions-1" href="https://www.gnu.org/software/bison/manual/html_node/Semantic-Actions.html">1.4 Semantic Actions</a></li>
+    <li><a id="toc-Writing-GLR-Parsers" href="https://www.gnu.org/software/bison/manual/html_node/GLR-Parsers.html">1.5 Writing GLR Parsers</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Using-GLR-on-Unambiguous-Grammars" href="https://www.gnu.org/software/bison/manual/html_node/Simple-GLR-Parsers.html">1.5.1 Using GLR on Unambiguous Grammars</a></li>
+      <li><a id="toc-Using-GLR-to-Resolve-Ambiguities" href="https://www.gnu.org/software/bison/manual/html_node/Merging-GLR-Parses.html">1.5.2 Using GLR to Resolve Ambiguities</a></li>
+      <li><a id="toc-GLR-Semantic-Actions-1" href="https://www.gnu.org/software/bison/manual/html_node/GLR-Semantic-Actions.html">1.5.3 GLR Semantic Actions</a>
+      <ul class="no-bullet">
+        <li><a id="toc-Deferred-semantic-actions" href="https://www.gnu.org/software/bison/manual/html_node/GLR-Semantic-Actions.html#Deferred-semantic-actions">1.5.3.1 Deferred semantic actions</a></li>
+        <li><a id="toc-YYERROR" href="https://www.gnu.org/software/bison/manual/html_node/GLR-Semantic-Actions.html#YYERROR">1.5.3.2 YYERROR</a></li>
+        <li><a id="toc-Restrictions-on-semantic-values-and-locations" href="https://www.gnu.org/software/bison/manual/html_node/GLR-Semantic-Actions.html#Restrictions-on-semantic-values-and-locations">1.5.3.3 Restrictions on semantic values and locations</a></li>
+      </ul></li>
+      <li><a id="toc-Controlling-a-Parse-with-Arbitrary-Predicates" href="https://www.gnu.org/software/bison/manual/html_node/Semantic-Predicates.html">1.5.4 Controlling a Parse with Arbitrary Predicates</a></li>
+    </ul></li>
+    <li><a id="toc-Locations-1" href="https://www.gnu.org/software/bison/manual/html_node/Locations.html">1.6 Locations</a></li>
+    <li><a id="toc-Bison-Output_003a-the-Parser-Implementation-File" href="https://www.gnu.org/software/bison/manual/html_node/Bison-Parser.html">1.7 Bison Output: the Parser Implementation File</a></li>
+    <li><a id="toc-Stages-in-Using-Bison" href="https://www.gnu.org/software/bison/manual/html_node/Stages.html">1.8 Stages in Using Bison</a></li>
+    <li><a id="toc-The-Overall-Layout-of-a-Bison-Grammar" href="https://www.gnu.org/software/bison/manual/html_node/Grammar-Layout.html">1.9 The Overall Layout of a Bison Grammar</a></li>
+  </ul></li>
+  <li><a id="toc-Examples-1" href="https://www.gnu.org/software/bison/manual/html_node/Examples.html">2 Examples</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Reverse-Polish-Notation-Calculator" href="https://www.gnu.org/software/bison/manual/html_node/RPN-Calc.html">2.1 Reverse Polish Notation Calculator</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Declarations-for-rpcalc" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Declarations.html">2.1.1 Declarations for <code>rpcalc</code></a></li>
+      <li><a id="toc-Grammar-Rules-for-rpcalc" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Rules.html">2.1.2 Grammar Rules for <code>rpcalc</code></a>
+      <ul class="no-bullet">
+        <li><a id="toc-Explanation-of-input" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Input.html">2.1.2.1 Explanation of <code>input</code></a></li>
+        <li><a id="toc-Explanation-of-line" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Line.html">2.1.2.2 Explanation of <code>line</code></a></li>
+        <li><a id="toc-Explanation-of-exp" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Exp.html">2.1.2.3 Explanation of <code>exp</code></a></li>
+      </ul></li>
+      <li><a id="toc-The-rpcalc-Lexical-Analyzer" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Lexer.html">2.1.3 The <code>rpcalc</code> Lexical Analyzer</a></li>
+      <li><a id="toc-The-Controlling-Function" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Main.html">2.1.4 The Controlling Function</a></li>
+      <li><a id="toc-The-Error-Reporting-Routine" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Error.html">2.1.5 The Error Reporting Routine</a></li>
+      <li><a id="toc-Running-Bison-to-Make-the-Parser" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Generate.html">2.1.6 Running Bison to Make the Parser</a></li>
+      <li><a id="toc-Compiling-the-Parser-Implementation-File" href="https://www.gnu.org/software/bison/manual/html_node/Rpcalc-Compile.html">2.1.7 Compiling the Parser Implementation File</a></li>
+    </ul></li>
+    <li><a id="toc-Infix-Notation-Calculator_003a-calc" href="https://www.gnu.org/software/bison/manual/html_node/Infix-Calc.html">2.2 Infix Notation Calculator: <code>calc</code></a></li>
+    <li><a id="toc-Simple-Error-Recovery-1" href="https://www.gnu.org/software/bison/manual/html_node/Simple-Error-Recovery.html">2.3 Simple Error Recovery</a></li>
+    <li><a id="toc-Location-Tracking-Calculator_003a-ltcalc" href="https://www.gnu.org/software/bison/manual/html_node/Location-Tracking-Calc.html">2.4 Location Tracking Calculator: <code>ltcalc</code></a>
+    <ul class="no-bullet">
+      <li><a id="toc-Declarations-for-ltcalc" href="https://www.gnu.org/software/bison/manual/html_node/Ltcalc-Declarations.html">2.4.1 Declarations for <code>ltcalc</code></a></li>
+      <li><a id="toc-Grammar-Rules-for-ltcalc" href="https://www.gnu.org/software/bison/manual/html_node/Ltcalc-Rules.html">2.4.2 Grammar Rules for <code>ltcalc</code></a></li>
+      <li><a id="toc-The-ltcalc-Lexical-Analyzer_002e" href="https://www.gnu.org/software/bison/manual/html_node/Ltcalc-Lexer.html">2.4.3 The <code>ltcalc</code> Lexical Analyzer.</a></li>
+    </ul></li>
+    <li><a id="toc-Multi_002dFunction-Calculator_003a-mfcalc" href="https://www.gnu.org/software/bison/manual/html_node/Multi_002dfunction-Calc.html">2.5 Multi-Function Calculator: <code>mfcalc</code></a>
+    <ul class="no-bullet">
+      <li><a id="toc-Declarations-for-mfcalc" href="https://www.gnu.org/software/bison/manual/html_node/Mfcalc-Declarations.html">2.5.1 Declarations for <code>mfcalc</code></a></li>
+      <li><a id="toc-Grammar-Rules-for-mfcalc" href="https://www.gnu.org/software/bison/manual/html_node/Mfcalc-Rules.html">2.5.2 Grammar Rules for <code>mfcalc</code></a></li>
+      <li><a id="toc-The-mfcalc-Symbol-Table" href="https://www.gnu.org/software/bison/manual/html_node/Mfcalc-Symbol-Table.html">2.5.3 The <code>mfcalc</code> Symbol Table</a></li>
+      <li><a id="toc-The-mfcalc-Lexer" href="https://www.gnu.org/software/bison/manual/html_node/Mfcalc-Lexer.html">2.5.4 The <code>mfcalc</code> Lexer</a></li>
+      <li><a id="toc-The-mfcalc-Main" href="https://www.gnu.org/software/bison/manual/html_node/Mfcalc-Main.html">2.5.5 The <code>mfcalc</code> Main</a></li>
+    </ul></li>
+    <li><a id="toc-Exercises-1" href="https://www.gnu.org/software/bison/manual/html_node/Exercises.html">2.6 Exercises</a></li>
+  </ul></li>
+  <li><a id="toc-Bison-Grammar-Files" href="https://www.gnu.org/software/bison/manual/html_node/Grammar-File.html">3 Bison Grammar Files</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Outline-of-a-Bison-Grammar" href="https://www.gnu.org/software/bison/manual/html_node/Grammar-Outline.html">3.1 Outline of a Bison Grammar</a>
+    <ul class="no-bullet">
+      <li><a id="toc-The-prologue" href="https://www.gnu.org/software/bison/manual/html_node/Prologue.html">3.1.1 The prologue</a></li>
+      <li><a id="toc-Prologue-Alternatives-1" href="https://www.gnu.org/software/bison/manual/html_node/Prologue-Alternatives.html">3.1.2 Prologue Alternatives</a></li>
+      <li><a id="toc-The-Bison-Declarations-Section" href="https://www.gnu.org/software/bison/manual/html_node/Bison-Declarations.html">3.1.3 The Bison Declarations Section</a></li>
+      <li><a id="toc-The-Grammar-Rules-Section" href="https://www.gnu.org/software/bison/manual/html_node/Grammar-Rules.html">3.1.4 The Grammar Rules Section</a></li>
+      <li><a id="toc-The-epilogue" href="https://www.gnu.org/software/bison/manual/html_node/Epilogue.html">3.1.5 The epilogue</a></li>
+    </ul></li>
+    <li><a id="toc-Symbols_002c-Terminal-and-Nonterminal" href="https://www.gnu.org/software/bison/manual/html_node/Symbols.html">3.2 Symbols, Terminal and Nonterminal</a></li>
+    <li><a id="toc-Grammar-Rules-1" href="https://www.gnu.org/software/bison/manual/html_node/Rules.html">3.3 Grammar Rules</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Syntax-of-Grammar-Rules" href="https://www.gnu.org/software/bison/manual/html_node/Rules-Syntax.html">3.3.1 Syntax of Grammar Rules</a></li>
+      <li><a id="toc-Empty-Rules-1" href="https://www.gnu.org/software/bison/manual/html_node/Empty-Rules.html">3.3.2 Empty Rules</a></li>
+      <li><a id="toc-Recursive-Rules" href="https://www.gnu.org/software/bison/manual/html_node/Recursion.html">3.3.3 Recursive Rules</a></li>
+    </ul></li>
+    <li><a id="toc-Defining-Language-Semantics" href="https://www.gnu.org/software/bison/manual/html_node/Semantics.html">3.4 Defining Language Semantics</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Data-Types-of-Semantic-Values" href="https://www.gnu.org/software/bison/manual/html_node/Value-Type.html">3.4.1 Data Types of Semantic Values</a></li>
+      <li><a id="toc-More-Than-One-Value-Type" href="https://www.gnu.org/software/bison/manual/html_node/Multiple-Types.html">3.4.2 More Than One Value Type</a></li>
+      <li><a id="toc-Generating-the-Semantic-Value-Type" href="https://www.gnu.org/software/bison/manual/html_node/Type-Generation.html">3.4.3 Generating the Semantic Value Type</a></li>
+      <li><a id="toc-The-Union-Declaration" href="https://www.gnu.org/software/bison/manual/html_node/Union-Decl.html">3.4.4 The Union Declaration</a></li>
+      <li><a id="toc-Providing-a-Structured-Semantic-Value-Type" href="https://www.gnu.org/software/bison/manual/html_node/Structured-Value-Type.html">3.4.5 Providing a Structured Semantic Value Type</a></li>
+      <li><a id="toc-Actions-1" href="https://www.gnu.org/software/bison/manual/html_node/Actions.html">3.4.6 Actions</a></li>
+      <li><a id="toc-Data-Types-of-Values-in-Actions" href="https://www.gnu.org/software/bison/manual/html_node/Action-Types.html">3.4.7 Data Types of Values in Actions</a></li>
+      <li><a id="toc-Actions-in-Midrule" href="https://www.gnu.org/software/bison/manual/html_node/Midrule-Actions.html">3.4.8 Actions in Midrule</a>
+      <ul class="no-bullet">
+        <li><a id="toc-Using-Midrule-Actions-1" href="https://www.gnu.org/software/bison/manual/html_node/Using-Midrule-Actions.html">3.4.8.1 Using Midrule Actions</a></li>
+        <li><a id="toc-Typed-Midrule-Actions-1" href="https://www.gnu.org/software/bison/manual/html_node/Typed-Midrule-Actions.html">3.4.8.2 Typed Midrule Actions</a></li>
+        <li><a id="toc-Midrule-Action-Translation-1" href="https://www.gnu.org/software/bison/manual/html_node/Midrule-Action-Translation.html">3.4.8.3 Midrule Action Translation</a></li>
+        <li><a id="toc-Conflicts-due-to-Midrule-Actions" href="https://www.gnu.org/software/bison/manual/html_node/Midrule-Conflicts.html">3.4.8.4 Conflicts due to Midrule Actions</a></li>
+      </ul></li>
+    </ul></li>
+    <li><a id="toc-Tracking-Locations-1" href="https://www.gnu.org/software/bison/manual/html_node/Tracking-Locations.html">3.5 Tracking Locations</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Data-Type-of-Locations" href="https://www.gnu.org/software/bison/manual/html_node/Location-Type.html">3.5.1 Data Type of Locations</a></li>
+      <li><a id="toc-Actions-and-Locations-1" href="https://www.gnu.org/software/bison/manual/html_node/Actions-and-Locations.html">3.5.2 Actions and Locations</a></li>
+      <li><a id="toc-Printing-Locations-1" href="https://www.gnu.org/software/bison/manual/html_node/Printing-Locations.html">3.5.3 Printing Locations</a></li>
+      <li><a id="toc-Default-Action-for-Locations" href="https://www.gnu.org/software/bison/manual/html_node/Location-Default-Action.html">3.5.4 Default Action for Locations</a></li>
+    </ul></li>
+    <li><a id="toc-Named-References-1" href="https://www.gnu.org/software/bison/manual/html_node/Named-References.html">3.6 Named References</a></li>
+    <li><a id="toc-Bison-Declarations-1" href="https://www.gnu.org/software/bison/manual/html_node/Declarations.html">3.7 Bison Declarations</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Require-a-Version-of-Bison" href="https://www.gnu.org/software/bison/manual/html_node/Require-Decl.html">3.7.1 Require a Version of Bison</a></li>
+      <li><a id="toc-Token-Kind-Names" href="https://www.gnu.org/software/bison/manual/html_node/Token-Decl.html">3.7.2 Token Kind Names</a></li>
+      <li><a id="toc-Operator-Precedence" href="https://www.gnu.org/software/bison/manual/html_node/Precedence-Decl.html">3.7.3 Operator Precedence</a></li>
+      <li><a id="toc-Nonterminal-Symbols" href="https://www.gnu.org/software/bison/manual/html_node/Type-Decl.html">3.7.4 Nonterminal Symbols</a></li>
+      <li><a id="toc-Syntax-of-Symbol-Declarations" href="https://www.gnu.org/software/bison/manual/html_node/Symbol-Decls.html">3.7.5 Syntax of Symbol Declarations</a></li>
+      <li><a id="toc-Performing-Actions-before-Parsing" href="https://www.gnu.org/software/bison/manual/html_node/Initial-Action-Decl.html">3.7.6 Performing Actions before Parsing</a></li>
+      <li><a id="toc-Freeing-Discarded-Symbols" href="https://www.gnu.org/software/bison/manual/html_node/Destructor-Decl.html">3.7.7 Freeing Discarded Symbols</a></li>
+      <li><a id="toc-Printing-Semantic-Values" href="https://www.gnu.org/software/bison/manual/html_node/Printer-Decl.html">3.7.8 Printing Semantic Values</a></li>
+      <li><a id="toc-Suppressing-Conflict-Warnings" href="https://www.gnu.org/software/bison/manual/html_node/Expect-Decl.html">3.7.9 Suppressing Conflict Warnings</a></li>
+      <li><a id="toc-The-Start_002dSymbol" href="https://www.gnu.org/software/bison/manual/html_node/Start-Decl.html">3.7.10 The Start-Symbol</a></li>
+      <li><a id="toc-A-Pure-_0028Reentrant_0029-Parser" href="https://www.gnu.org/software/bison/manual/html_node/Pure-Decl.html">3.7.11 A Pure (Reentrant) Parser</a></li>
+      <li><a id="toc-A-Push-Parser" href="https://www.gnu.org/software/bison/manual/html_node/Push-Decl.html">3.7.12 A Push Parser</a></li>
+      <li><a id="toc-Bison-Declaration-Summary" href="https://www.gnu.org/software/bison/manual/html_node/Decl-Summary.html">3.7.13 Bison Declaration Summary</a></li>
+      <li><a id="toc-_0025define-Summary-1" href="https://www.gnu.org/software/bison/manual/html_node/_0025define-Summary.html">3.7.14 %define Summary</a></li>
+      <li><a id="toc-_0025code-Summary-1" href="https://www.gnu.org/software/bison/manual/html_node/_0025code-Summary.html">3.7.15 %code Summary</a></li>
+    </ul></li>
+    <li><a id="toc-Multiple-Parsers-in-the-Same-Program" href="https://www.gnu.org/software/bison/manual/html_node/Multiple-Parsers.html">3.8 Multiple Parsers in the Same Program</a></li>
+  </ul></li>
+  <li><a id="toc-Parser-C_002dLanguage-Interface" href="https://www.gnu.org/software/bison/manual/html_node/Interface.html">4 Parser C-Language Interface</a>
+  <ul class="no-bullet">
+    <li><a id="toc-The-Parser-Function-yyparse" href="https://www.gnu.org/software/bison/manual/html_node/Parser-Function.html">4.1 The Parser Function <code>yyparse</code></a></li>
+    <li><a id="toc-Push-Parser-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/Push-Parser-Interface.html">4.2 Push Parser Interface</a></li>
+    <li><a id="toc-The-Lexical-Analyzer-Function-yylex" href="https://www.gnu.org/software/bison/manual/html_node/Lexical.html">4.3 The Lexical Analyzer Function <code>yylex</code></a>
+    <ul class="no-bullet">
+      <li><a id="toc-Calling-Convention-for-yylex" href="https://www.gnu.org/software/bison/manual/html_node/Calling-Convention.html">4.3.1 Calling Convention for <code>yylex</code></a></li>
+      <li><a id="toc-Special-Tokens-1" href="https://www.gnu.org/software/bison/manual/html_node/Special-Tokens.html">4.3.2 Special Tokens</a></li>
+      <li><a id="toc-Finding-Tokens-by-String-Literals" href="https://www.gnu.org/software/bison/manual/html_node/Tokens-from-Literals.html">4.3.3 Finding Tokens by String Literals</a></li>
+      <li><a id="toc-Semantic-Values-of-Tokens" href="https://www.gnu.org/software/bison/manual/html_node/Token-Values.html">4.3.4 Semantic Values of Tokens</a></li>
+      <li><a id="toc-Textual-Locations-of-Tokens" href="https://www.gnu.org/software/bison/manual/html_node/Token-Locations.html">4.3.5 Textual Locations of Tokens</a></li>
+      <li><a id="toc-Calling-Conventions-for-Pure-Parsers" href="https://www.gnu.org/software/bison/manual/html_node/Pure-Calling.html">4.3.6 Calling Conventions for Pure Parsers</a></li>
+    </ul></li>
+    <li><a id="toc-Error-Reporting-1" href="https://www.gnu.org/software/bison/manual/html_node/Error-Reporting.html">4.4 Error Reporting</a>
+    <ul class="no-bullet">
+      <li><a id="toc-The-Error-Reporting-Function-yyerror" href="https://www.gnu.org/software/bison/manual/html_node/Error-Reporting-Function.html">4.4.1 The Error Reporting Function <code>yyerror</code></a></li>
+      <li><a id="toc-The-Syntax-Error-Reporting-Function-yyreport_005fsyntax_005ferror" href="https://www.gnu.org/software/bison/manual/html_node/Syntax-Error-Reporting-Function.html">4.4.2 The Syntax Error Reporting Function <code>yyreport_syntax_error</code></a></li>
+    </ul></li>
+    <li><a id="toc-Special-Features-for-Use-in-Actions" href="https://www.gnu.org/software/bison/manual/html_node/Action-Features.html">4.5 Special Features for Use in Actions</a></li>
+    <li><a id="toc-Parser-Internationalization" href="https://www.gnu.org/software/bison/manual/html_node/Internationalization.html">4.6 Parser Internationalization</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Enabling-Internationalization" href="https://www.gnu.org/software/bison/manual/html_node/Enabling-I18n.html">4.6.1 Enabling Internationalization</a></li>
+      <li><a id="toc-Token-Internationalization" href="https://www.gnu.org/software/bison/manual/html_node/Token-I18n.html">4.6.2 Token Internationalization</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a id="toc-The-Bison-Parser-Algorithm" href="https://www.gnu.org/software/bison/manual/html_node/Algorithm.html">5 The Bison Parser Algorithm</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Lookahead-Tokens" href="https://www.gnu.org/software/bison/manual/html_node/Lookahead.html">5.1 Lookahead Tokens</a></li>
+    <li><a id="toc-Shift_002fReduce-Conflicts" href="https://www.gnu.org/software/bison/manual/html_node/Shift_002fReduce.html">5.2 Shift/Reduce Conflicts</a></li>
+    <li><a id="toc-Operator-Precedence-1" href="https://www.gnu.org/software/bison/manual/html_node/Precedence.html">5.3 Operator Precedence</a>
+    <ul class="no-bullet">
+      <li><a id="toc-When-Precedence-is-Needed" href="https://www.gnu.org/software/bison/manual/html_node/Why-Precedence.html">5.3.1 When Precedence is Needed</a></li>
+      <li><a id="toc-Specifying-Operator-Precedence" href="https://www.gnu.org/software/bison/manual/html_node/Using-Precedence.html">5.3.2 Specifying Operator Precedence</a></li>
+      <li><a id="toc-Specifying-Precedence-Only" href="https://www.gnu.org/software/bison/manual/html_node/Precedence-Only.html">5.3.3 Specifying Precedence Only</a></li>
+      <li><a id="toc-Precedence-Examples-1" href="https://www.gnu.org/software/bison/manual/html_node/Precedence-Examples.html">5.3.4 Precedence Examples</a></li>
+      <li><a id="toc-How-Precedence-Works" href="https://www.gnu.org/software/bison/manual/html_node/How-Precedence.html">5.3.5 How Precedence Works</a></li>
+      <li><a id="toc-Using-Precedence-For-Non-Operators" href="https://www.gnu.org/software/bison/manual/html_node/Non-Operators.html">5.3.6 Using Precedence For Non Operators</a></li>
+    </ul></li>
+    <li><a id="toc-Context_002dDependent-Precedence" href="https://www.gnu.org/software/bison/manual/html_node/Contextual-Precedence.html">5.4 Context-Dependent Precedence</a></li>
+    <li><a id="toc-Parser-States-1" href="https://www.gnu.org/software/bison/manual/html_node/Parser-States.html">5.5 Parser States</a></li>
+    <li><a id="toc-Reduce_002fReduce-Conflicts" href="https://www.gnu.org/software/bison/manual/html_node/Reduce_002fReduce.html">5.6 Reduce/Reduce Conflicts</a></li>
+    <li><a id="toc-Mysterious-Conflicts-1" href="https://www.gnu.org/software/bison/manual/html_node/Mysterious-Conflicts.html">5.7 Mysterious Conflicts</a></li>
+    <li><a id="toc-Tuning-LR-1" href="https://www.gnu.org/software/bison/manual/html_node/Tuning-LR.html">5.8 Tuning LR</a>
+    <ul class="no-bullet">
+      <li><a id="toc-LR-Table-Construction-1" href="https://www.gnu.org/software/bison/manual/html_node/LR-Table-Construction.html">5.8.1 LR Table Construction</a></li>
+      <li><a id="toc-Default-Reductions-1" href="https://www.gnu.org/software/bison/manual/html_node/Default-Reductions.html">5.8.2 Default Reductions</a></li>
+      <li><a id="toc-LAC-1" href="https://www.gnu.org/software/bison/manual/html_node/LAC.html">5.8.3 LAC</a></li>
+      <li><a id="toc-Unreachable-States-1" href="https://www.gnu.org/software/bison/manual/html_node/Unreachable-States.html">5.8.4 Unreachable States</a></li>
+    </ul></li>
+    <li><a id="toc-Generalized-LR-_0028GLR_0029-Parsing" href="https://www.gnu.org/software/bison/manual/html_node/Generalized-LR-Parsing.html">5.9 Generalized LR (GLR) Parsing</a></li>
+    <li><a id="toc-Memory-Management_002c-and-How-to-Avoid-Memory-Exhaustion" href="https://www.gnu.org/software/bison/manual/html_node/Memory-Management.html">5.10 Memory Management, and How to Avoid Memory Exhaustion</a></li>
+  </ul></li>
+  <li><a id="toc-Error-Recovery-1" href="https://www.gnu.org/software/bison/manual/html_node/Error-Recovery.html">6 Error Recovery</a></li>
+  <li><a id="toc-Handling-Context-Dependencies" href="https://www.gnu.org/software/bison/manual/html_node/Context-Dependency.html">7 Handling Context Dependencies</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Semantic-Info-in-Token-Kinds" href="https://www.gnu.org/software/bison/manual/html_node/Semantic-Tokens.html">7.1 Semantic Info in Token Kinds</a></li>
+    <li><a id="toc-Lexical-Tie_002dins-1" href="https://www.gnu.org/software/bison/manual/html_node/Lexical-Tie_002dins.html">7.2 Lexical Tie-ins</a></li>
+    <li><a id="toc-Lexical-Tie_002dins-and-Error-Recovery" href="https://www.gnu.org/software/bison/manual/html_node/Tie_002din-Recovery.html">7.3 Lexical Tie-ins and Error Recovery</a></li>
+  </ul></li>
+  <li><a id="toc-Debugging-Your-Parser" href="https://www.gnu.org/software/bison/manual/html_node/Debugging.html">8 Debugging Your Parser</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Generation-of-Counterexamples" href="https://www.gnu.org/software/bison/manual/html_node/Counterexamples.html">8.1 Generation of Counterexamples</a></li>
+    <li><a id="toc-Understanding-Your-Parser" href="https://www.gnu.org/software/bison/manual/html_node/Understanding.html">8.2 Understanding Your Parser</a></li>
+    <li><a id="toc-Visualizing-Your-Parser" href="https://www.gnu.org/software/bison/manual/html_node/Graphviz.html">8.3 Visualizing Your Parser</a></li>
+    <li><a id="toc-Visualizing-your-parser-in-multiple-formats" href="https://www.gnu.org/software/bison/manual/html_node/Xml.html">8.4 Visualizing your parser in multiple formats</a></li>
+    <li><a id="toc-Tracing-Your-Parser" href="https://www.gnu.org/software/bison/manual/html_node/Tracing.html">8.5 Tracing Your Parser</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Enabling-Traces-1" href="https://www.gnu.org/software/bison/manual/html_node/Enabling-Traces.html">8.5.1 Enabling Traces</a></li>
+      <li><a id="toc-Enabling-Debug-Traces-for-mfcalc" href="https://www.gnu.org/software/bison/manual/html_node/Mfcalc-Traces.html">8.5.2 Enabling Debug Traces for <code>mfcalc</code></a></li>
+    </ul></li>
+  </ul></li>
+  <li><a id="toc-Invoking-Bison" href="https://www.gnu.org/software/bison/manual/html_node/Invocation.html">9 Invoking Bison</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Bison-Options-1" href="https://www.gnu.org/software/bison/manual/html_node/Bison-Options.html">9.1 Bison Options</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Operation-Modes-1" href="https://www.gnu.org/software/bison/manual/html_node/Operation-Modes.html">9.1.1 Operation Modes</a></li>
+      <li><a id="toc-Diagnostics-1" href="https://www.gnu.org/software/bison/manual/html_node/Diagnostics.html">9.1.2 Diagnostics</a></li>
+      <li><a id="toc-Tuning-the-Parser-1" href="https://www.gnu.org/software/bison/manual/html_node/Tuning-the-Parser.html">9.1.3 Tuning the Parser</a></li>
+      <li><a id="toc-Output-Files-1" href="https://www.gnu.org/software/bison/manual/html_node/Output-Files.html">9.1.4 Output Files</a></li>
+    </ul></li>
+    <li><a id="toc-Option-Cross-Key-1" href="https://www.gnu.org/software/bison/manual/html_node/Option-Cross-Key.html">9.2 Option Cross Key</a></li>
+    <li><a id="toc-Yacc-Library-1" href="https://www.gnu.org/software/bison/manual/html_node/Yacc-Library.html">9.3 Yacc Library</a></li>
+  </ul></li>
+  <li><a id="toc-Parsers-Written-In-Other-Languages" href="https://www.gnu.org/software/bison/manual/html_node/Other-Languages.html">10 Parsers Written In Other Languages</a>
+  <ul class="no-bullet">
+    <li><a id="toc-C_002b_002b-Parsers-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Parsers.html">10.1 C++ Parsers</a>
+    <ul class="no-bullet">
+      <li><a id="toc-A-Simple-C_002b_002b-Example-1" href="https://www.gnu.org/software/bison/manual/html_node/A-Simple-C_002b_002b-Example.html">10.1.1 A Simple C++ Example</a></li>
+      <li><a id="toc-C_002b_002b-Bison-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Bison-Interface.html">10.1.2 C++ Bison Interface</a></li>
+      <li><a id="toc-C_002b_002b-Parser-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Parser-Interface.html">10.1.3 C++ Parser Interface</a></li>
+      <li><a id="toc-C_002b_002b-Semantic-Values-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Semantic-Values.html">10.1.4 C++ Semantic Values</a>
+      <ul class="no-bullet">
+        <li><a id="toc-C_002b_002b-Unions-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Unions.html">10.1.4.1 C++ Unions</a></li>
+        <li><a id="toc-C_002b_002b-Variants-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Variants.html">10.1.4.2 C++ Variants</a></li>
+      </ul></li>
+      <li><a id="toc-C_002b_002b-Location-Values-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Location-Values.html">10.1.5 C++ Location Values</a>
+      <ul class="no-bullet">
+        <li><a id="toc-C_002b_002b-position-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-position.html">10.1.5.1 C++ <code>position</code></a></li>
+        <li><a id="toc-C_002b_002b-location-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-location.html">10.1.5.2 C++ <code>location</code></a></li>
+        <li><a id="toc-Exposing-the-Location-Classes-1" href="https://www.gnu.org/software/bison/manual/html_node/Exposing-the-Location-Classes.html">10.1.5.3 Exposing the Location Classes</a></li>
+        <li><a id="toc-User-Defined-Location-Type-1" href="https://www.gnu.org/software/bison/manual/html_node/User-Defined-Location-Type.html">10.1.5.4 User Defined Location Type</a></li>
+      </ul></li>
+      <li><a id="toc-C_002b_002b-Parser-Context-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Parser-Context.html">10.1.6 C++ Parser Context</a></li>
+      <li><a id="toc-C_002b_002b-Scanner-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/C_002b_002b-Scanner-Interface.html">10.1.7 C++ Scanner Interface</a>
+      <ul class="no-bullet">
+        <li><a id="toc-Split-Symbols-1" href="https://www.gnu.org/software/bison/manual/html_node/Split-Symbols.html">10.1.7.1 Split Symbols</a></li>
+        <li><a id="toc-Complete-Symbols-1" href="https://www.gnu.org/software/bison/manual/html_node/Complete-Symbols.html">10.1.7.2 Complete Symbols</a></li>
+      </ul></li>
+      <li><a id="toc-A-Complete-C_002b_002b-Example-1" href="https://www.gnu.org/software/bison/manual/html_node/A-Complete-C_002b_002b-Example.html">10.1.8 A Complete C++ Example</a>
+      <ul class="no-bullet">
+        <li><a id="toc-Calc_002b_002b-_002d_002d_002d-C_002b_002b-Calculator-1" href="https://www.gnu.org/software/bison/manual/html_node/Calc_002b_002b-_002d_002d_002d-C_002b_002b-Calculator.html">10.1.8.1 Calc++ — C++ Calculator</a></li>
+        <li><a id="toc-Calc_002b_002b-Parsing-Driver-1" href="https://www.gnu.org/software/bison/manual/html_node/Calc_002b_002b-Parsing-Driver.html">10.1.8.2 Calc++ Parsing Driver</a></li>
+        <li><a id="toc-Calc_002b_002b-Parser-1" href="https://www.gnu.org/software/bison/manual/html_node/Calc_002b_002b-Parser.html">10.1.8.3 Calc++ Parser</a></li>
+        <li><a id="toc-Calc_002b_002b-Scanner-1" href="https://www.gnu.org/software/bison/manual/html_node/Calc_002b_002b-Scanner.html">10.1.8.4 Calc++ Scanner</a></li>
+        <li><a id="toc-Calc_002b_002b-Top-Level-1" href="https://www.gnu.org/software/bison/manual/html_node/Calc_002b_002b-Top-Level.html">10.1.8.5 Calc++ Top Level</a></li>
+      </ul></li>
+    </ul></li>
+    <li><a id="toc-D-Parsers-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Parsers.html">10.2 D Parsers</a>
+    <ul class="no-bullet">
+      <li><a id="toc-D-Bison-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Bison-Interface.html">10.2.1 D Bison Interface</a></li>
+      <li><a id="toc-D-Semantic-Values-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Semantic-Values.html">10.2.2 D Semantic Values</a></li>
+      <li><a id="toc-D-Location-Values-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Location-Values.html">10.2.3 D Location Values</a></li>
+      <li><a id="toc-D-Parser-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Parser-Interface.html">10.2.4 D Parser Interface</a></li>
+      <li><a id="toc-D-Parser-Context-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Parser-Context-Interface.html">10.2.5 D Parser Context Interface</a></li>
+      <li><a id="toc-D-Scanner-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Scanner-Interface.html">10.2.6 D Scanner Interface</a></li>
+      <li><a id="toc-Special-Features-for-Use-in-D-Actions" href="https://www.gnu.org/software/bison/manual/html_node/D-Action-Features.html">10.2.7 Special Features for Use in D Actions</a></li>
+      <li><a id="toc-D-Push-Parser-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Push-Parser-Interface.html">10.2.8 D Push Parser Interface</a></li>
+      <li><a id="toc-D-Complete-Symbols-1" href="https://www.gnu.org/software/bison/manual/html_node/D-Complete-Symbols.html">10.2.9 D Complete Symbols</a></li>
+    </ul></li>
+    <li><a id="toc-Java-Parsers-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Parsers.html">10.3 Java Parsers</a>
+    <ul class="no-bullet">
+      <li><a id="toc-Java-Bison-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Bison-Interface.html">10.3.1 Java Bison Interface</a></li>
+      <li><a id="toc-Java-Semantic-Values-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Semantic-Values.html">10.3.2 Java Semantic Values</a></li>
+      <li><a id="toc-Java-Location-Values-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Location-Values.html">10.3.3 Java Location Values</a></li>
+      <li><a id="toc-Java-Parser-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Parser-Interface.html">10.3.4 Java Parser Interface</a></li>
+      <li><a id="toc-Java-Parser-Context-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Parser-Context-Interface.html">10.3.5 Java Parser Context Interface</a></li>
+      <li><a id="toc-Java-Scanner-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Scanner-Interface.html">10.3.6 Java Scanner Interface</a></li>
+      <li><a id="toc-Special-Features-for-Use-in-Java-Actions" href="https://www.gnu.org/software/bison/manual/html_node/Java-Action-Features.html">10.3.7 Special Features for Use in Java Actions</a></li>
+      <li><a id="toc-Java-Push-Parser-Interface-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Push-Parser-Interface.html">10.3.8 Java Push Parser Interface</a></li>
+      <li><a id="toc-Differences-between-C_002fC_002b_002b-and-Java-Grammars" href="https://www.gnu.org/software/bison/manual/html_node/Java-Differences.html">10.3.9 Differences between C/C++ and Java Grammars</a></li>
+      <li><a id="toc-Java-Declarations-Summary-1" href="https://www.gnu.org/software/bison/manual/html_node/Java-Declarations-Summary.html">10.3.10 Java Declarations Summary</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a id="toc-A-Brief-History-of-the-Greater-Ungulates" href="https://www.gnu.org/software/bison/manual/html_node/History.html">11 A Brief History of the Greater Ungulates</a>
+  <ul class="no-bullet">
+    <li><a id="toc-The-ancestral-Yacc" href="https://www.gnu.org/software/bison/manual/html_node/Yacc.html">11.1 The ancestral Yacc</a></li>
+    <li><a id="toc-yacchack-1" href="https://www.gnu.org/software/bison/manual/html_node/yacchack.html">11.2 yacchack</a></li>
+    <li><a id="toc-Berkeley-Yacc" href="https://www.gnu.org/software/bison/manual/html_node/Byacc.html">11.3 Berkeley Yacc</a></li>
+    <li><a id="toc-Bison-2" href="https://www.gnu.org/software/bison/manual/html_node/Bison.html">11.4 Bison</a></li>
+    <li><a id="toc-Other-Ungulates-1" href="https://www.gnu.org/software/bison/manual/html_node/Other-Ungulates.html">11.5 Other Ungulates</a></li>
+  </ul></li>
+  <li><a id="toc-Bison-Version-Compatibility_003a-Best-Practices" href="https://www.gnu.org/software/bison/manual/html_node/Versioning.html">12 Bison Version Compatibility: Best Practices</a></li>
+  <li><a id="toc-Frequently-Asked-Questions" href="https://www.gnu.org/software/bison/manual/html_node/FAQ.html">13 Frequently Asked Questions</a>
+  <ul class="no-bullet">
+    <li><a id="toc-Memory-Exhausted-1" href="https://www.gnu.org/software/bison/manual/html_node/Memory-Exhausted.html">13.1 Memory Exhausted</a></li>
+    <li><a id="toc-How-Can-I-Reset-the-Parser-1" href="https://www.gnu.org/software/bison/manual/html_node/How-Can-I-Reset-the-Parser.html">13.2 How Can I Reset the Parser</a></li>
+    <li><a id="toc-Strings-are-Destroyed-1" href="https://www.gnu.org/software/bison/manual/html_node/Strings-are-Destroyed.html">13.3 Strings are Destroyed</a></li>
+    <li><a id="toc-Implementing-Gotos_002fLoops-1" href="https://www.gnu.org/software/bison/manual/html_node/Implementing-Gotos_002fLoops.html">13.4 Implementing Gotos/Loops</a></li>
+    <li><a id="toc-Multiple-start_002dsymbols-1" href="https://www.gnu.org/software/bison/manual/html_node/Multiple-start_002dsymbols.html">13.5 Multiple start-symbols</a></li>
+    <li><a id="toc-Secure_003f-Conform_003f-1" href="https://www.gnu.org/software/bison/manual/html_node/Secure_003f-Conform_003f.html">13.6 Secure?  Conform?</a></li>
+    <li><a id="toc-Enabling-Relocatability-1" href="https://www.gnu.org/software/bison/manual/html_node/Enabling-Relocatability.html">13.7 Enabling Relocatability</a></li>
+    <li><a id="toc-I-can_0027t-build-Bison-1" href="https://www.gnu.org/software/bison/manual/html_node/I-can_0027t-build-Bison.html">13.8 I can’t build Bison</a></li>
+    <li><a id="toc-Where-can-I-find-help_003f-1" href="https://www.gnu.org/software/bison/manual/html_node/Where-can-I-find-help_003f.html">13.9 Where can I find help?</a></li>
+    <li><a id="toc-Bug-Reports-1" href="https://www.gnu.org/software/bison/manual/html_node/Bug-Reports.html">13.10 Bug Reports</a></li>
+    <li><a id="toc-More-Languages-1" href="https://www.gnu.org/software/bison/manual/html_node/More-Languages.html">13.11 More Languages</a></li>
+    <li><a id="toc-Beta-Testing-1" href="https://www.gnu.org/software/bison/manual/html_node/Beta-Testing.html">13.12 Beta Testing</a></li>
+    <li><a id="toc-Mailing-Lists-1" href="https://www.gnu.org/software/bison/manual/html_node/Mailing-Lists.html">13.13 Mailing Lists</a></li>
+  </ul></li>
+  <li><a id="toc-Bison-Symbols" href="https://www.gnu.org/software/bison/manual/html_node/Table-of-Symbols.html">Appendix A Bison Symbols</a></li>
+  <li><a id="toc-Glossary-1" href="https://www.gnu.org/software/bison/manual/html_node/Glossary.html">Appendix B Glossary</a></li>
+  <li><a id="toc-GNU-Free-Documentation-License-1" href="https://www.gnu.org/software/bison/manual/html_node/GNU-Free-Documentation-License.html">Appendix C GNU Free Documentation License</a></li>
+  <li><a id="toc-Bibliography-1" href="https://www.gnu.org/software/bison/manual/html_node/Bibliography.html">Bibliography</a></li>
+  <li><a id="toc-Index-of-Terms-1" href="https://www.gnu.org/software/bison/manual/html_node/Index-of-Terms.html" rel="index">Index of Terms</a></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<div class="header">
+<p>
+Next: <a href="https://www.gnu.org/software/bison/manual/html_node/Introduction.html" accesskey="n" rel="next">Introduction</a>, Up: <a href="https://www.gnu.org/manual" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="https://www.gnu.org/software/bison/manual/html_node/index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="https://www.gnu.org/software/bison/manual/html_node/Index-of-Terms.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+
+
+</body></html>

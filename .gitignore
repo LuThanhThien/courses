@@ -1,0 +1,180 @@
+  # ============================================================
+# 🐍 Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+env*/
+venv*/
+
+# Packaging
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+*.egg
+*.whl
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pyenv / mypy / pytype / pyre
+.python-version
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# IDEs / editors
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+*.pid
+
+# ============================================================
+# 💻 C / C++ / CMake
+# ============================================================
+# Compiled object files and binaries
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+*.dSYM/
+
+# Build directories
+build/
+Build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Intermediate files
+*.pch
+*.pdb
+*.mod
+*.ilk
+
+# ============================================================
+# ⚙️ CUDA
+# ============================================================
+# Compiled CUDA object and binary files
+*.cubin
+*.fatbin
+*.ptx
+*.cudafe1.cpp
+*.cudafe2.cpp
+*.cu.cpp
+*.cu.o
+*.cu.d
+*.linkinfo
+
+# ============================================================
+# 💾 Large / binary files
+# ============================================================
+
+# Video
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.m4v
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Images (optional — comment out if you need small ones)
+*.tiff
+*.tif
+*.bmp
+*.psd
+*.xcf
+
+# Archives / compressed
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Models / checkpoints
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+*.weights
+
+# Datasets and caches
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.hdf5
+*.csv
+*.tsv
+*.jsonl
+
+# ============================================================
+# 🧩 Project outputs
+# ============================================================
+logs/
+runs/
+outputs/
+checkpoints/
+results/
+tmp/
+cache/
+data/
+datasets/
+experiments/
+work_dirs/
+

@@ -1,0 +1,2 @@
+docker start cs143
+docker exec -it cs143 bash

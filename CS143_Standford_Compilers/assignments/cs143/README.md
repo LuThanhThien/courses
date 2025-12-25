@@ -8,6 +8,10 @@
 
 > laboratory assignments of cs143-Compilers
 
+See `assignments` which contains files for all assignments. `.skel` is skeleton COOL files that you can use to complete your assignments. Solutions are in `src`.
+
+Directory `bin` contains binary files for COOL compiling or execution, etc.
+
 ### 🏠 [Homepage](https://web.stanford.edu/class/cs143/)
 
 ## Build
@@ -16,16 +20,20 @@
 docker build -t colinaaa/cs143 .
 ```
 
-## Install
-
-```sh
-make install
-```
-
 ## Usage
 
-```fish
- docker run -it -v (pwd):/root/cs143 --name cs143 colinaaa/cs143:latest
+```sh
+docker run -it \
+      -v bin/coolc:/bin/coolc \
+      -v bin/spim:/bin/spim
+      -v ($pwd):/root/cs143 \
+      --name cs143 colinaaa/cs143:latest
+```
+
+Next time
+
+```sh
+docker exec -it cs143 bash
 ```
 
 ## Readings

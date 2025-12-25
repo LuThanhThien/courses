@@ -17,7 +17,7 @@ RUN apt-get install -y git flex bison build-essential wget vim libc6:i386
 WORKDIR /usr/class/cs143/cool
 COPY --chown=root:root . .
 RUN echo "export PATH=$PATH:/usr/class/cs143/cool/bin" >> /root/.bashrc
-RUN make install
+# RUN make install # remove this
 
 # Cleanup
 RUN apt-get autoremove && apt-get autoclean

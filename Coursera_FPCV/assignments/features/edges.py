@@ -75,12 +75,16 @@ def sobel_detector(input,
     mag = mag * mask 
     return mag > 0
 
+
 def gaussian_2d(input, size=5, sigma=1.0):
+
     ax = np.linspace(-(size // 2), size // 2, size)
     xx, yy = np.meshgrid(ax, ax)
+
     kernel = np.exp(-(xx**2 + yy**2) / (2.0 * sigma**2))
-    kernel = kernel / np.sum(kernel)
-    return convolve2d(input, kernel, mode='same')
+    kernel /= np.sum(kernel)
+
+    return convolve2d(input, kernel, mode='same', boundary='symm')
 
 ### Laplacian of Gaussian (LoG) Edge Detection ###
 
@@ -161,17 +165,65 @@ def laplacian_detector(input, threshold=0.03):
 
 ### Canyn Edge Detector ###
 
-def canny_detector(input, low_threshold=-0.03, high_threshold=0.03):
+def non_maximum_suppression(mag, orient):
+    """
+    mag: gradient magnitude
+    orient: gradient orientation (radians)
+    """
+
+    H, W = mag.shape
+    output = np.zeros((H, W), dtype=np.float32)
+
+    # Convert angle to degrees in [0,180)
+    angle = np.rad2deg(orient) % 180
+
+    for i in range(1, H-1):
+        for j in range(1, W-1):
+
+            q = 0
+            r = 0
+
+            # 0 degrees (horizontal edge)
+            if (0 <= angle[i,j] < 22.5) or (157.5 <= angle[i,j] <= 180):
+                q = mag[i, j+1]
+                r = mag[i, j-1]
+
+            # 45 degrees
+            elif (22.5 <= angle[i,j] < 67.5):
+                q = mag[i+1, j-1]
+                r = mag[i-1, j+1]
+
+            # 90 degrees (vertical edge)
+            elif (67.5 <= angle[i,j] < 112.5):
+                q = mag[i+1, j]
+                r = mag[i-1, j]
+
+            # 135 degrees
+            elif (112.5 <= angle[i,j] < 157.5):
+                q = mag[i-1, j-1]
+                r = mag[i+1, j+1]
+
+            if mag[i,j] >= q and mag[i,j] >= r:
+                output[i,j] = mag[i,j]
+
+    return output
+
+
+def canny_detector(input, 
+                   low_threshold=-0.03, 
+                   high_threshold=0.03,
+                   gaussian_kwargs={}):
     # denoise by Gaussian filter
-    input = gaussian_2d(input, size=5, sigma=1.0)
+    input = gaussian_2d(input, **gaussian_kwargs)
     
     # image gradient and orientation using Sobel
     mag, orient = sobel_2d(input, SOBEL_KERNEL_X_3, SOBEL_KERNEL_Y_3)
     
-    # 1D laplacian along gradient direction
-    L = laplacian_1d(mag, orient)
-    
-    # zero-crossing detection
-    edges = zero_crossing(L, low_threshold, high_threshold)
+    # 3. Non-maximum suppression
+    nms = non_maximum_suppression(mag, orient)
+
+    # 4. Hysteresis thresholding
+    edges = hysteresis_threshold(nms, low_threshold, high_threshold)
     
     return edges
+
